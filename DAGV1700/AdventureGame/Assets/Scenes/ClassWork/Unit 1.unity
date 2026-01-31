@@ -2169,7 +2169,7 @@ GameObject:
   - component: {fileID: 1857716048}
   - component: {fileID: 1857716047}
   m_Layer: 6
-  m_Name: Idle
+  m_Name: FallBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
