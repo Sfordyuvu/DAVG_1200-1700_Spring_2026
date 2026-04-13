@@ -289,7 +289,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145751802}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b58e542e4e133483ca34f3afb817f460, type: 3}
   m_Name: 
@@ -327,6 +327,19 @@ MonoBehaviour:
   key2: 276
   direction1: 0
   direction2: 180
+--- !u!114 &145751812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145751802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c209a9e8384a1324da6e9d7e33f0694d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 615957071}
 --- !u!1001 &297762495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5627,8 +5640,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1534016277}
-          m_TargetAssemblyTypeName: SimpleImageBehaviour, Assembly-CSharp
+        - m_Target: {fileID: 1534016281}
+          m_TargetAssemblyTypeName: TheImageBehavior, Assembly-CSharp
           m_MethodName: UpdateWithFloatData
           m_Mode: 1
           m_Arguments:
@@ -5684,6 +5697,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4672605868999096512, guid: 27fb1ce06ba02724e86610edc5374494, type: 3}
   m_PrefabInstance: {fileID: 318746575085964120}
   m_PrefabAsset: {fileID: 0}
+--- !u!143 &615957071 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 8200557982377176478, guid: 27fb1ce06ba02724e86610edc5374494, type: 3}
+  m_PrefabInstance: {fileID: 318746575085964120}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &615957072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615957060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85783b0c864e0ef4ea31b765c8f83f0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 8
+  jumpForce: 2
+  gravity: -18
 --- !u!1 &839966865
 GameObject:
   m_ObjectHideFlags: 0
@@ -6368,8 +6401,8 @@ GameObject:
   - component: {fileID: 1534016276}
   - component: {fileID: 1534016279}
   - component: {fileID: 1534016278}
-  - component: {fileID: 1534016277}
   - component: {fileID: 1534016280}
+  - component: {fileID: 1534016281}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -6396,19 +6429,6 @@ RectTransform:
   m_AnchoredPosition: {x: 100, y: -35}
   m_SizeDelta: {x: 180, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1534016277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1534016275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddf1b3746124a41cd90cb0e79f73be2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dataObj: {fileID: 11400000, guid: 8afb8fb777508cb4fa34dabd209a8bea, type: 2}
 --- !u!114 &1534016278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6493,6 +6513,19 @@ MonoBehaviour:
   applicationQuitEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1534016281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534016275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74044baa011dac748b10e622297626c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataObj: {fileID: 11400000, guid: 8afb8fb777508cb4fa34dabd209a8bea, type: 2}
 --- !u!1 &1537737788
 GameObject:
   m_ObjectHideFlags: 0
@@ -7065,8 +7098,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1534016277}
-          m_TargetAssemblyTypeName: SimpleImageBehaviour, Assembly-CSharp
+        - m_Target: {fileID: 1534016281}
+          m_TargetAssemblyTypeName: TheImageBehavior, Assembly-CSharp
           m_MethodName: UpdateWithFloatData
           m_Mode: 1
           m_Arguments:
@@ -7502,6 +7535,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6358065121337675765, guid: 27fb1ce06ba02724e86610edc5374494, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8543405786007711232, guid: 27fb1ce06ba02724e86610edc5374494, type: 3}
       propertyPath: m_Name
       value: Player
@@ -7518,12 +7555,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8543405786007711232, guid: 27fb1ce06ba02724e86610edc5374494, type: 3}
       insertIndex: -1
       addedObject: {fileID: 615957066}
+    - targetCorrespondingSourceObject: {fileID: 8543405786007711232, guid: 27fb1ce06ba02724e86610edc5374494, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 615957072}
     - targetCorrespondingSourceObject: {fileID: 2703659324599504811, guid: 27fb1ce06ba02724e86610edc5374494, type: 3}
       insertIndex: -1
       addedObject: {fileID: 145751804}
     - targetCorrespondingSourceObject: {fileID: 2703659324599504811, guid: 27fb1ce06ba02724e86610edc5374494, type: 3}
       insertIndex: -1
       addedObject: {fileID: 145751806}
+    - targetCorrespondingSourceObject: {fileID: 2703659324599504811, guid: 27fb1ce06ba02724e86610edc5374494, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 145751812}
     - targetCorrespondingSourceObject: {fileID: 2703659324599504811, guid: 27fb1ce06ba02724e86610edc5374494, type: 3}
       insertIndex: -1
       addedObject: {fileID: 145751809}
@@ -7770,14 +7813,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 47082316566320233, guid: f484cd2979b46f34083577da201e52a2, type: 3}
+      propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1534016281}
+    - target: {fileID: 47082316566320233, guid: f484cd2979b46f34083577da201e52a2, type: 3}
+      propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: UpdateWithFloatData
+      objectReference: {fileID: 0}
+    - target: {fileID: 47082316566320233, guid: f484cd2979b46f34083577da201e52a2, type: 3}
+      propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: TheImageBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2868917258889317646, guid: f484cd2979b46f34083577da201e52a2, type: 3}
+      propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1534016281}
+    - target: {fileID: 2868917258889317646, guid: f484cd2979b46f34083577da201e52a2, type: 3}
+      propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: UpdateWithFloatData
+      objectReference: {fileID: 0}
+    - target: {fileID: 2868917258889317646, guid: f484cd2979b46f34083577da201e52a2, type: 3}
+      propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: TheImageBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3661971717880690412, guid: f484cd2979b46f34083577da201e52a2, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1534016277}
+      objectReference: {fileID: 1534016281}
+    - target: {fileID: 3661971717880690412, guid: f484cd2979b46f34083577da201e52a2, type: 3}
+      propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: UpdateWithFloatData
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661971717880690412, guid: f484cd2979b46f34083577da201e52a2, type: 3}
+      propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: TheImageBehavior, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5098128218180661270, guid: f484cd2979b46f34083577da201e52a2, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1534016277}
+      objectReference: {fileID: 0}
     - target: {fileID: 5098128218180661270, guid: f484cd2979b46f34083577da201e52a2, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: UpdateWithFloatData
@@ -7789,7 +7864,7 @@ PrefabInstance:
     - target: {fileID: 7041101557063690609, guid: f484cd2979b46f34083577da201e52a2, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1534016277}
+      objectReference: {fileID: 0}
     - target: {fileID: 7041101557063690609, guid: f484cd2979b46f34083577da201e52a2, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: UpdateWithFloatData
@@ -7797,7 +7872,7 @@ PrefabInstance:
     - target: {fileID: 8410079110459609747, guid: f484cd2979b46f34083577da201e52a2, type: 3}
       propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1534016277}
+      objectReference: {fileID: 0}
     - target: {fileID: 8867239625178636495, guid: f484cd2979b46f34083577da201e52a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.57
