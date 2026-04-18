@@ -1,13 +1,15 @@
 //Maya ASCII 2025ff03 scene
 //Name: Scene2.ma
-//Last modified: Fri, Apr 10, 2026 11:11:44 PM
+//Last modified: Sat, Apr 18, 2026 05:25:32 PM
 //Codeset: 1252
 file -rdi 1 -ns "PlanterTray" -rfn "PlanterTrayRN" -op "v=0;" -typ "mayaAscii"
 		 "D:/Repositories/DAVG_1200-1700_Spring_2026/DAGV1100and1200/Maya//scenes/Assignments/Scene2/Assets/PlanterTray.ma";
 file -rdi 1 -ns "Shelf" -rfn "ShelfRN" -op "v=0;" -typ "mayaAscii" "D:/Repositories/DAVG_1200-1700_Spring_2026/DAGV1100and1200/Maya//scenes/Assignments/Scene2/Assets/Shelf.ma";
+file -rdi 1 -ns "Pot" -rfn "PotRN" -op "v=0;" -typ "mayaAscii" "D:/Repositories/DAVG_1200-1700_Spring_2026/DAGV1100and1200/Maya//scenes/Assignments/Scene2/Assets/Pot.ma";
 file -r -ns "PlanterTray" -dr 1 -rfn "PlanterTrayRN" -op "v=0;" -typ "mayaAscii"
 		 "D:/Repositories/DAVG_1200-1700_Spring_2026/DAGV1100and1200/Maya//scenes/Assignments/Scene2/Assets/PlanterTray.ma";
 file -r -ns "Shelf" -dr 1 -rfn "ShelfRN" -op "v=0;" -typ "mayaAscii" "D:/Repositories/DAVG_1200-1700_Spring_2026/DAGV1100and1200/Maya//scenes/Assignments/Scene2/Assets/Shelf.ma";
+file -r -ns "Pot" -dr 1 -rfn "PotRN" -op "v=0;" -typ "mayaAscii" "D:/Repositories/DAVG_1200-1700_Spring_2026/DAGV1100and1200/Maya//scenes/Assignments/Scene2/Assets/Pot.ma";
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
 		 "mtoa" "5.4.8.2";
@@ -17,18 +19,18 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "56655C83-4949-6C01-2FAD-BB9D2E6FFDF5";
+fileInfo "UUID" "E767CD66-49D5-CC9A-F83C-D696938657EA";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "A6157A2D-4A64-525D-F7D0-9DA5327E2343";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.5178735885793659 8.708492827167392 31.162852597517329 ;
-	setAttr ".r" -type "double3" -10.538352729665885 5.7999999999998915 9.9903770284925286e-17 ;
+	setAttr ".t" -type "double3" 5.8980440018925897 8.8740923130691627 19.56305691705257 ;
+	setAttr ".r" -type "double3" -12.338352729639134 18.999999999999648 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "78861145-4D54-C519-2F91-B89FD182C2E1";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 29.544281004678144;
+	setAttr ".coi" 23.228791354482553;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -323,224 +325,6 @@ createNode mesh -n "pCylinderShape4" -p "pCylinder4";
 		5.3048277 6.28791 7.6425614 5.3117809 6.28791 7.6414604 5.3180542 6.28791 7.6382637 
 		5.3230319 6.28791 7.6332855 5.3262286 6.28791 7.6270132 5.3273301 6.28791 7.620059 
 		5.3048277 7.6138411 7.6200595 5.3048277 6.28791 7.6200595;
-	setAttr -s 42 ".vt[0:41]"  0.95105714 -1 -0.30901718 0.80901754 -1 -0.5877856
-		 0.5877856 -1 -0.80901748 0.30901715 -1 -0.95105702 0 -1 -1.000000476837 -0.30901715 -1 -0.95105696
-		 -0.58778548 -1 -0.8090173 -0.80901724 -1 -0.58778542 -0.95105678 -1 -0.30901706 -1.000000238419 -1 0
-		 -0.95105678 -1 0.30901706 -0.80901718 -1 0.58778536 -0.58778536 -1 0.80901712 -0.30901706 -1 0.95105666
-		 -2.9802322e-08 -1 1.000000119209 0.30901697 -1 0.9510566 0.58778524 -1 0.80901706
-		 0.809017 -1 0.5877853 0.95105654 -1 0.309017 1 -1 0 0.95105714 1 -0.30901718 0.80901754 1 -0.5877856
-		 0.5877856 1 -0.80901748 0.30901715 1 -0.95105702 0 1 -1.000000476837 -0.30901715 1 -0.95105696
-		 -0.58778548 1 -0.8090173 -0.80901724 1 -0.58778542 -0.95105678 1 -0.30901706 -1.000000238419 1 0
-		 -0.95105678 1 0.30901706 -0.80901718 1 0.58778536 -0.58778536 1 0.80901712 -0.30901706 1 0.95105666
-		 -2.9802322e-08 1 1.000000119209 0.30901697 1 0.9510566 0.58778524 1 0.80901706 0.809017 1 0.5877853
-		 0.95105654 1 0.309017 1 1 0 0 -1 0 0 1 0;
-	setAttr -s 100 ".ed[0:99]"  0 1 0 1 2 0 2 3 0 3 4 0 4 5 0 5 6 0 6 7 0
-		 7 8 0 8 9 0 9 10 0 10 11 0 11 12 0 12 13 0 13 14 0 14 15 0 15 16 0 16 17 0 17 18 0
-		 18 19 0 19 0 0 20 21 0 21 22 0 22 23 0 23 24 0 24 25 0 25 26 0 26 27 0 27 28 0 28 29 0
-		 29 30 0 30 31 0 31 32 0 32 33 0 33 34 0 34 35 0 35 36 0 36 37 0 37 38 0 38 39 0 39 20 0
-		 0 20 1 1 21 1 2 22 1 3 23 1 4 24 1 5 25 1 6 26 1 7 27 1 8 28 1 9 29 1 10 30 1 11 31 1
-		 12 32 1 13 33 1 14 34 1 15 35 1 16 36 1 17 37 1 18 38 1 19 39 1 40 0 1 40 1 1 40 2 1
-		 40 3 1 40 4 1 40 5 1 40 6 1 40 7 1 40 8 1 40 9 1 40 10 1 40 11 1 40 12 1 40 13 1
-		 40 14 1 40 15 1 40 16 1 40 17 1 40 18 1 40 19 1 20 41 1 21 41 1 22 41 1 23 41 1 24 41 1
-		 25 41 1 26 41 1 27 41 1 28 41 1 29 41 1 30 41 1 31 41 1 32 41 1 33 41 1 34 41 1 35 41 1
-		 36 41 1 37 41 1 38 41 1 39 41 1;
-	setAttr -s 60 -ch 200 ".fc[0:59]" -type "polyFaces" 
-		f 4 0 41 -21 -41
-		mu 0 4 20 21 42 41
-		f 4 1 42 -22 -42
-		mu 0 4 21 22 43 42
-		f 4 2 43 -23 -43
-		mu 0 4 22 23 44 43
-		f 4 3 44 -24 -44
-		mu 0 4 23 24 45 44
-		f 4 4 45 -25 -45
-		mu 0 4 24 25 46 45
-		f 4 5 46 -26 -46
-		mu 0 4 25 26 47 46
-		f 4 6 47 -27 -47
-		mu 0 4 26 27 48 47
-		f 4 7 48 -28 -48
-		mu 0 4 27 28 49 48
-		f 4 8 49 -29 -49
-		mu 0 4 28 29 50 49
-		f 4 9 50 -30 -50
-		mu 0 4 29 30 51 50
-		f 4 10 51 -31 -51
-		mu 0 4 30 31 52 51
-		f 4 11 52 -32 -52
-		mu 0 4 31 32 53 52
-		f 4 12 53 -33 -53
-		mu 0 4 32 33 54 53
-		f 4 13 54 -34 -54
-		mu 0 4 33 34 55 54
-		f 4 14 55 -35 -55
-		mu 0 4 34 35 56 55
-		f 4 15 56 -36 -56
-		mu 0 4 35 36 57 56
-		f 4 16 57 -37 -57
-		mu 0 4 36 37 58 57
-		f 4 17 58 -38 -58
-		mu 0 4 37 38 59 58
-		f 4 18 59 -39 -59
-		mu 0 4 38 39 60 59
-		f 4 19 40 -40 -60
-		mu 0 4 39 40 61 60
-		f 3 -1 -61 61
-		mu 0 3 1 0 82
-		f 3 -2 -62 62
-		mu 0 3 2 1 82
-		f 3 -3 -63 63
-		mu 0 3 3 2 82
-		f 3 -4 -64 64
-		mu 0 3 4 3 82
-		f 3 -5 -65 65
-		mu 0 3 5 4 82
-		f 3 -6 -66 66
-		mu 0 3 6 5 82
-		f 3 -7 -67 67
-		mu 0 3 7 6 82
-		f 3 -8 -68 68
-		mu 0 3 8 7 82
-		f 3 -9 -69 69
-		mu 0 3 9 8 82
-		f 3 -10 -70 70
-		mu 0 3 10 9 82
-		f 3 -11 -71 71
-		mu 0 3 11 10 82
-		f 3 -12 -72 72
-		mu 0 3 12 11 82
-		f 3 -13 -73 73
-		mu 0 3 13 12 82
-		f 3 -14 -74 74
-		mu 0 3 14 13 82
-		f 3 -15 -75 75
-		mu 0 3 15 14 82
-		f 3 -16 -76 76
-		mu 0 3 16 15 82
-		f 3 -17 -77 77
-		mu 0 3 17 16 82
-		f 3 -18 -78 78
-		mu 0 3 18 17 82
-		f 3 -19 -79 79
-		mu 0 3 19 18 82
-		f 3 -20 -80 60
-		mu 0 3 0 19 82
-		f 3 20 81 -81
-		mu 0 3 80 79 83
-		f 3 21 82 -82
-		mu 0 3 79 78 83
-		f 3 22 83 -83
-		mu 0 3 78 77 83
-		f 3 23 84 -84
-		mu 0 3 77 76 83
-		f 3 24 85 -85
-		mu 0 3 76 75 83
-		f 3 25 86 -86
-		mu 0 3 75 74 83
-		f 3 26 87 -87
-		mu 0 3 74 73 83
-		f 3 27 88 -88
-		mu 0 3 73 72 83
-		f 3 28 89 -89
-		mu 0 3 72 71 83
-		f 3 29 90 -90
-		mu 0 3 71 70 83
-		f 3 30 91 -91
-		mu 0 3 70 69 83
-		f 3 31 92 -92
-		mu 0 3 69 68 83
-		f 3 32 93 -93
-		mu 0 3 68 67 83
-		f 3 33 94 -94
-		mu 0 3 67 66 83
-		f 3 34 95 -95
-		mu 0 3 66 65 83
-		f 3 35 96 -96
-		mu 0 3 65 64 83
-		f 3 36 97 -97
-		mu 0 3 64 63 83
-		f 3 37 98 -98
-		mu 0 3 63 62 83
-		f 3 38 99 -99
-		mu 0 3 62 81 83
-		f 3 39 80 -100
-		mu 0 3 81 80 83;
-	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
-	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
-	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
-	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "pCylinder3" -p "GreyBox";
-	rename -uid "82DA337A-4AFE-5697-C386-4490D7A8A114";
-	setAttr ".rp" -type "double3" -0.43436963890246938 3.5231573793720377 -2.2603050521537837 ;
-	setAttr ".sp" -type "double3" -0.43436963890246938 3.5231573793720377 -2.2603050521537837 ;
-createNode mesh -n "pCylinderShape3" -p "pCylinder3";
-	rename -uid "F1612119-4452-E4AA-D679-719644202A27";
-	setAttr -k off ".v";
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr -s 10 ".gtag";
-	setAttr ".gtag[0].gtagnm" -type "string" "bottom";
-	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "f[20:39]";
-	setAttr ".gtag[1].gtagnm" -type "string" "bottomRing";
-	setAttr ".gtag[1].gtagcmp" -type "componentList" 1 "e[0:19]";
-	setAttr ".gtag[2].gtagnm" -type "string" "cylBottomCap";
-	setAttr ".gtag[2].gtagcmp" -type "componentList" 2 "vtx[0:19]" "vtx[40]";
-	setAttr ".gtag[3].gtagnm" -type "string" "cylBottomRing";
-	setAttr ".gtag[3].gtagcmp" -type "componentList" 1 "vtx[0:19]";
-	setAttr ".gtag[4].gtagnm" -type "string" "cylSides";
-	setAttr ".gtag[4].gtagcmp" -type "componentList" 1 "vtx[0:39]";
-	setAttr ".gtag[5].gtagnm" -type "string" "cylTopCap";
-	setAttr ".gtag[5].gtagcmp" -type "componentList" 2 "vtx[20:39]" "vtx[41]";
-	setAttr ".gtag[6].gtagnm" -type "string" "cylTopRing";
-	setAttr ".gtag[6].gtagcmp" -type "componentList" 1 "vtx[20:39]";
-	setAttr ".gtag[7].gtagnm" -type "string" "sides";
-	setAttr ".gtag[7].gtagcmp" -type "componentList" 1 "f[0:19]";
-	setAttr ".gtag[8].gtagnm" -type "string" "top";
-	setAttr ".gtag[8].gtagcmp" -type "componentList" 1 "f[40:59]";
-	setAttr ".gtag[9].gtagnm" -type "string" "topRing";
-	setAttr ".gtag[9].gtagcmp" -type "componentList" 1 "e[20:39]";
-	setAttr ".pv" -type "double2" 0.49999998509883881 0.84374997019767761 ;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr -s 84 ".uvst[0].uvsp[0:83]" -type "float2" 0.64860266 0.10796607
-		 0.62640899 0.064408496 0.59184152 0.029841021 0.54828393 0.0076473355 0.5 -7.4505806e-08
-		 0.45171607 0.0076473504 0.40815851 0.029841051 0.37359107 0.064408526 0.3513974 0.1079661
-		 0.34374997 0.15625 0.3513974 0.2045339 0.37359107 0.24809146 0.40815854 0.28265893
-		 0.4517161 0.3048526 0.5 0.3125 0.54828387 0.3048526 0.59184146 0.28265893 0.62640893
-		 0.24809146 0.6486026 0.2045339 0.65625 0.15625 0.375 0.3125 0.38749999 0.3125 0.39999998
-		 0.3125 0.41249996 0.3125 0.42499995 0.3125 0.43749994 0.3125 0.44999993 0.3125 0.46249992
-		 0.3125 0.4749999 0.3125 0.48749989 0.3125 0.49999988 0.3125 0.51249987 0.3125 0.52499986
-		 0.3125 0.53749985 0.3125 0.54999983 0.3125 0.56249982 0.3125 0.57499981 0.3125 0.5874998
-		 0.3125 0.59999979 0.3125 0.61249977 0.3125 0.62499976 0.3125 0.375 0.6875 0.38749999
-		 0.6875 0.39999998 0.6875 0.41249996 0.6875 0.42499995 0.6875 0.43749994 0.6875 0.44999993
-		 0.6875 0.46249992 0.6875 0.4749999 0.6875 0.48749989 0.6875 0.49999988 0.6875 0.51249987
-		 0.6875 0.52499986 0.6875 0.53749985 0.6875 0.54999983 0.6875 0.56249982 0.6875 0.57499981
-		 0.6875 0.5874998 0.6875 0.59999979 0.6875 0.61249977 0.6875 0.62499976 0.6875 0.64860266
-		 0.79546607 0.62640899 0.75190848 0.59184152 0.71734101 0.54828393 0.69514734 0.5
-		 0.68749994 0.45171607 0.69514734 0.40815851 0.71734107 0.37359107 0.75190854 0.3513974
-		 0.79546607 0.34374997 0.84375 0.3513974 0.89203393 0.37359107 0.93559146 0.40815854
-		 0.97015893 0.4517161 0.9923526 0.5 1 0.54828387 0.9923526 0.59184146 0.97015893 0.62640893
-		 0.93559146 0.6486026 0.89203393 0.65625 0.84375 0.5 0.15625 0.5 0.84375;
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 42 ".pt[0:41]" -type "float3"  -1.0199027 4.0416903 -2.0700538 
-		-0.93245381 4.0416903 -1.8984257 -0.79624885 4.0416903 -1.7622207 -0.6246208 4.0416903 
-		-1.674772 -0.43436959 4.0416903 -1.6446393 -0.24411838 4.0416903 -1.674772 -0.072490342 
-		4.0416903 -1.762221 0.06371443 4.0416903 -1.8984258 0.15116325 4.0416903 -2.0700538 
-		0.18129604 4.0416903 -2.2603049 0.15116325 4.0416903 -2.450556 0.063714385 4.0416903 
-		-2.6221843 -0.072490439 4.0416903 -2.7583888 -0.24411845 4.0416903 -2.8458378 -0.43436959 
-		4.0416903 -2.8759706 -0.62462068 4.0416903 -2.8458378 -0.79624873 4.0416903 -2.7583888 
-		-0.93245345 4.0416903 -2.622184 -1.0199022 4.0416903 -2.450556 -1.050035 4.0416903 
-		-2.2603049 -0.87593299 3.0046244 -2.1168323 -0.80998588 3.0046244 -1.9874038 -0.70727074 
-		3.0046244 -1.8846886 -0.57784224 3.0046244 -1.8187416 -0.43436959 3.0046244 -1.7960178 
-		-0.29089695 3.0046244 -1.8187417 -0.16146845 3.0046244 -1.8846887 -0.058753446 3.0046244 
-		-1.9874039 0.0071936771 3.0046244 -2.1168325 0.029917441 3.0046244 -2.2603049 0.0071936771 
-		3.0046244 -2.4037776 -0.058753464 3.0046244 -2.533206 -0.16146851 3.0046244 -2.635921 
-		-0.29089698 3.0046244 -2.7018683 -0.43436956 3.0046244 -2.724592 -0.57784212 3.0046244 
-		-2.7018681 -0.70727056 3.0046244 -2.635921 -0.80998558 3.0046244 -2.533206 -0.87593275 
-		3.0046244 -2.4037776 -0.89865643 3.0046244 -2.2603049 -0.43436959 4.0416903 -2.2603049 
-		-0.43436959 3.0046244 -2.2603049;
 	setAttr -s 42 ".vt[0:41]"  0.95105714 -1 -0.30901718 0.80901754 -1 -0.5877856
 		 0.5877856 -1 -0.80901748 0.30901715 -1 -0.95105702 0 -1 -1.000000476837 -0.30901715 -1 -0.95105696
 		 -0.58778548 -1 -0.8090173 -0.80901724 -1 -0.58778542 -0.95105678 -1 -0.30901706 -1.000000238419 -1 0
@@ -1180,8 +964,9 @@ createNode mesh -n "pCubeShape2" -p "pCube2";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pCube1" -p "GreyBox";
 	rename -uid "822B9508-45FF-0FCC-D2C6-7587233D0772";
-	setAttr ".rp" -type "double3" 0 7.2748875948007488 5.7346287333137898e-07 ;
-	setAttr ".sp" -type "double3" 0 7.2748875948007488 5.7346287333137898e-07 ;
+	setAttr ".t" -type "double3" 0 0.16583412764446237 0 ;
+	setAttr ".rp" -type "double3" 0 6.7617657753373024 5.7346287333137898e-07 ;
+	setAttr ".sp" -type "double3" 0 6.7617657753373024 5.7346287333137898e-07 ;
 createNode mesh -n "pCubeShape1" -p "pCube1";
 	rename -uid "6ADFC2EB-4932-A2CE-A97A-779C91AD0146";
 	setAttr -k off ".v";
@@ -1934,20 +1719,20 @@ createNode mesh -n "SupportShape1" -p "Support1";
 		24 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "7CB4B672-44D5-5CB0-DAC6-829EE5A27F30";
+	rename -uid "58A05B30-4934-38E9-D958-86A5669887CF";
 	setAttr -s 3 ".lnk";
 	setAttr -s 3 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "19BA4957-4CAB-E209-DB88-CEAA62CC9764";
+	rename -uid "843CFE4D-4868-9C5B-D9B7-94B5251F0C09";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "C9E9021A-420A-D488-9D76-E4B00B64B687";
+	rename -uid "F41EF8A5-4C2B-939E-DF0A-909EB3814C51";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "B88A86BE-444C-1AC8-3179-4E98AB62BFCA";
+	rename -uid "99C2B00A-49AE-6ABB-AEE8-8BB0664106CE";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "DCC98977-471A-AEAD-B2BB-88BF8DAFD5F0";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "59A7C51A-4C7B-18AB-9419-2E8FD012F44E";
+	rename -uid "3118BCAD-4A1E-9A8D-C47B-478CE5760D37";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "0776707D-4BFB-F41D-236C-48858D9A4DC4";
 	setAttr ".g" yes;
@@ -2481,7 +2266,7 @@ createNode lambert -n "Matt";
 createNode shadingEngine -n "lambert2SG";
 	rename -uid "9B5DA058-49C0-F746-C837-DC8BF435969A";
 	setAttr ".ihi" 0;
-	setAttr -s 17 ".dsm";
+	setAttr -s 18 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo1";
 	rename -uid "3F01B844-4EBB-B4C7-A234-B7A9A5DA0058";
@@ -2523,7 +2308,7 @@ createNode reference -n "ShelfRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"ShelfRN"
 		"ShelfRN" 0
-		"ShelfRN" 400
+		"ShelfRN" 62
 		2 "|Shelf:Shelf" "translate" " -type \"double3\" 0 0 0"
 		2 "|Shelf:Shelf" "rotate" " -type \"double3\" 0 0 0"
 		2 "|Shelf:Shelf" "rotatePivot" " -type \"double3\" -6.52940893173217773 2.55247223377227783 -4.57763671875e-05"
@@ -2537,40 +2322,9 @@ createNode reference -n "ShelfRN";
 		
 		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "uvPivot" " -type \"double2\" 0.30449898820671861 0.91389230048000614"
 		
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "uvSet[0].uvSetPoints" " -s 8"
+		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "uvst[0].uvsp[0:7]" " -s 8 -type \"float2\" 0.22655299000000001 0.91592050000000003 0.22718506999999999 0.93443847000000002 0.22659612000000001 0.91718339999999998 0.38303389999999998 0.92911911000000003 0.38244495000000001 0.91186403999999999 0.38181290000000001 0.89334619000000004 0.38240184999999999 0.91060125999999997 0.22596406999999999 0.89866542999999999"
 		
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "uvSet[0].uvSetPoints[0]" " -type \"float2\" 0.22655299000000001 0.91592050000000003"
-		
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "uvSet[0].uvSetPoints[1]" " -type \"float2\" 0.22718506999999999 0.93443847000000002"
-		
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "uvSet[0].uvSetPoints[2]" " -type \"float2\" 0.22659612000000001 0.91718339999999998"
-		
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "uvSet[0].uvSetPoints[3]" " -type \"float2\" 0.38303389999999998 0.92911911000000003"
-		
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "uvSet[0].uvSetPoints[4]" " -type \"float2\" 0.38244495000000001 0.91186403999999999"
-		
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "uvSet[0].uvSetPoints[5]" " -type \"float2\" 0.38181290000000001 0.89334619000000004"
-		
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "uvSet[0].uvSetPoints[6]" " -type \"float2\" 0.38240184999999999 0.91060125999999997"
-		
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "uvSet[0].uvSetPoints[7]" " -type \"float2\" 0.22596406999999999 0.89866542999999999"
-		
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "pnts" " -s 8"
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "pnts[0]" " -type \"float3\" -5.11600880000000036 3.37882950000000015 -8.88666629999999991"
-		
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "pnts[1]" " -type \"float3\" -7.9730945000000002 3.37882950000000015 -8.88666629999999991"
-		
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "pnts[2]" " -type \"float3\" -5.11600880000000036 2.68018219999999996 -8.88666629999999991"
-		
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "pnts[3]" " -type \"float3\" -7.9730945000000002 2.68018219999999996 -8.88666629999999991"
-		
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "pnts[4]" " -type \"float3\" -5.11600880000000036 2.68018219999999996 8.88666629999999991"
-		
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "pnts[5]" " -type \"float3\" -7.9730945000000002 2.68018219999999996 8.88666629999999991"
-		
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "pnts[6]" " -type \"float3\" -5.11600880000000036 3.37882950000000015 8.88666629999999991"
-		
-		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "pnts[7]" " -type \"float3\" -7.9730945000000002 3.37882950000000015 8.88666629999999991"
+		2 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape" "pt[0:7]" " -s 8 -type \"float3\" -5.11600880000000036 3.37882950000000015 -8.88666629999999991 -7.9730945000000002 3.37882950000000015 -8.88666629999999991 -5.11600880000000036 2.68018219999999996 -8.88666629999999991 -7.9730945000000002 2.68018219999999996 -8.88666629999999991 -5.11600880000000036 2.68018219999999996 8.88666629999999991 -7.9730945000000002 2.68018219999999996 8.88666629999999991 -5.11600880000000036 3.37882950000000015 8.88666629999999991 -7.9730945000000002 3.37882950000000015 8.88666629999999991"
 		
 		2 "|Shelf:Shelf|Shelf:Edging" "rotatePivot" " -type \"double3\" -6.54455177125513643 0 0"
 		
@@ -2582,161 +2336,23 @@ createNode reference -n "ShelfRN";
 		
 		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvPivot" 
 		" -type \"double2\" 0.70116601001869183 0.16236166361851967"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints" 
-		" -s 30"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[0]" 
-		" -type \"float2\" 0.61780751 0.16125438"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[1]" 
-		" -type \"float2\" 0.61783217999999995 0.16314745999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[2]" 
-		" -type \"float2\" 0.78449994000000001 0.15908501999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[3]" 
-		" -type \"float2\" 0.78452456000000004 0.16097811000000001"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[4]" 
-		" -type \"float2\" 0.61816055000000003 0.16533651999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[5]" 
-		" -type \"float2\" 0.78422862000000004 0.16128190000000001"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[6]" 
-		" -type \"float2\" 0.61813587000000003 0.16344343"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[7]" 
-		" -type \"float2\" 0.78455704000000004 0.16347096999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[8]" 
-		" -type \"float2\" 0.61786454999999996 0.16564032000000001"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[9]" 
-		" -type \"float2\" 0.78425323999999996 0.163175"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[10]" 
-		" -type \"float2\" 0.61798542999999995 0.16340521999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[11]" 
-		" -type \"float2\" 0.61787426000000001 0.16329689"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[12]" 
-		" -type \"float2\" 0.61767691000000002 0.16314946"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[13]" 
-		" -type \"float2\" 0.61785011999999995 0.16534056999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[14]" 
-		" -type \"float2\" 0.61765223999999996 0.16125639999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[15]" 
-		" -type \"float2\" 0.61800533999999996 0.16533856"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[16]" 
-		" -type \"float2\" 0.78448635 0.16112860000000001"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[17]" 
-		" -type \"float2\" 0.78467977 0.16097607999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[18]" 
-		" -type \"float2\" 0.78437805000000005 0.16123978999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[19]" 
-		" -type \"float2\" 0.78440845000000003 0.16317298999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[20]" 
-		" -type \"float2\" 0.78465521000000005 0.15908298000000001"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[21]" 
-		" -type \"float2\" 0.78456371999999996 0.16317095000000001"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[22]" 
-		" -type \"float2\" 0.78451490000000002 0.16332153999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[23]" 
-		" -type \"float2\" 0.78440374000000002 0.16321321"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[24]" 
-		" -type \"float2\" 0.78438383 0.1612799"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[25]" 
-		" -type \"float2\" 0.78453903999999997 0.16127786"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[26]" 
-		" -type \"float2\" 0.61801112000000002 0.16537864999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[27]" 
-		" -type \"float2\" 0.61798072000000004 0.16344547000000001"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[28]" 
-		" -type \"float2\" 0.61790281999999996 0.16548984"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvSet[0].uvSetPoints[29]" 
-		" -type \"float2\" 0.61782545 0.16344747000000001"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pnts" " -s 16"
+		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "uvst[0].uvsp[0:29]" 
+		(" -s 30 -type \"float2\" 0.61780751 0.16125438 0.61783217999999995 0.16314745999999999 0.78449994000000001 0.15908501999999999 0.78452456000000004 0.16097811000000001 0.61816055000000003 0.16533651999999999 0.78422862000000004 0.16128190000000001 0.61813587000000003 0.16344343 0.78455704000000004 0.16347096999999999 0.61786454999999996 0.16564032000000001 0.78425323999999996 0.163175 0.61798542999999995 0.16340521999999999 0.61787426000000001 0.16329689 0.61767691000000002 0.16314946 0.61785011999999995 0.16534056999999999 0.61765223999999996 0.16125639999999999 0.61800533999999996 0.16533856 0.78448635 0.16112860000000001 0.78467977 0.16097607999999999 0.78437805000000005 0.16123978999999999 0.78440845000000003 0.16317298999999999 0.78465521000000005 0.15908298000000001 0.78456371999999996 0.16317095000000001 0.78451490000000002 0.16332153999999999 0.78440374000000002 0.16321321 0.78438383 0.1612799 0.78453903999999997 0.16127786 0.61801112000000002 0.16537864999999999 0.61798072000000004 0.16344547000000001 0."
+		+ "61790281999999996 0.16548984 0.61782545 0.16344747000000001")
+		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pt[0:15]" 
+		" -s 16 -type \"float3\" -5.11600829999999984 3.37882950000000015 -8.91699410000000015 -14.180746 3.37882950000000015 7.91700080000000028 -5.11600829999999984 2.396126 -8.91699410000000015 -14.180746 2.396126 7.91700080000000028 -5.09793420000000008 2.396126 -8.035862 -5.10304930000000034 2.396126 -8.41293620000000075 -5.10202980000000039 2.396126 -7.8867617000000001 -5.10304930000000034 3.37882950000000015 -8.41293620000000075 -5.09793420000000008 3.37882950000000015 -8.035862 -5.10202980000000039 3.37882950000000015 -7.8867617000000001 -14.16342 2.396126 8.41294770000000014 -14.146367 2.396126 8.76785180000000075 -14.134156 2.396126 8.88667009999999991 -14.134156 3.37882950000000015 8.88667009999999991 -14.146367 3.37882950000000015 8.76785180000000075 -14.16342 3.37882950000000015 8.41294770000000014"
 		
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pnts[0]" 
-		" -type \"float3\" -5.11600829999999984 3.37882950000000015 -8.91699410000000015"
-		
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pnts[1]" 
-		" -type \"float3\" -14.180746 3.37882950000000015 7.91700080000000028"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pnts[2]" 
-		" -type \"float3\" -5.11600829999999984 2.396126 -8.91699410000000015"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pnts[3]" 
-		" -type \"float3\" -14.180746 2.396126 7.91700080000000028"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pnts[4]" 
-		" -type \"float3\" -5.09793420000000008 2.396126 -8.035862"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pnts[5]" 
-		" -type \"float3\" -5.10304930000000034 2.396126 -8.41293620000000075"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pnts[6]" 
-		" -type \"float3\" -5.10202980000000039 2.396126 -7.8867617000000001"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pnts[7]" 
-		" -type \"float3\" -5.10304930000000034 3.37882950000000015 -8.41293620000000075"
-		
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pnts[8]" 
-		" -type \"float3\" -5.09793420000000008 3.37882950000000015 -8.035862"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pnts[9]" 
-		" -type \"float3\" -5.10202980000000039 3.37882950000000015 -7.8867617000000001"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pnts[10]" 
-		" -type \"float3\" -14.16342 2.396126 8.41294770000000014"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pnts[11]" 
-		" -type \"float3\" -14.146367 2.396126 8.76785180000000075"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pnts[12]" 
-		" -type \"float3\" -14.134156 2.396126 8.88667009999999991"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pnts[13]" 
-		" -type \"float3\" -14.134156 3.37882950000000015 8.88667009999999991"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pnts[14]" 
-		" -type \"float3\" -14.146367 3.37882950000000015 8.76785180000000075"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape" "pnts[15]" 
-		" -type \"float3\" -14.16342 3.37882950000000015 8.41294770000000014"
 		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2" "rotatePivot" " -type \"double3\" -6.54455177125513554 2.97441947460174561 -8.4018101692199707"
 		
 		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2" "scalePivot" " -type \"double3\" -6.54455177125513554 2.97441947460174561 -8.4018101692199707"
 		
 		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "uvPivot" 
 		" -type \"double2\" 0.66255995872337081 0.080798633818583987"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "uvSet[0].uvSetPoints" 
-		" -s 14"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "uvSet[0].uvSetPoints[0]" 
-		" -type \"float2\" 0.62959069000000001 0.073778286999999998"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "uvSet[0].uvSetPoints[1]" 
-		" -type \"float2\" 0.69536251000000004 0.072158239999999998"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "uvSet[0].uvSetPoints[2]" 
-		" -type \"float2\" 0.62975745999999999 0.080549225000000002"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "uvSet[0].uvSetPoints[3]" 
-		" -type \"float2\" 0.69552928000000003 0.078929201000000004"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "uvSet[0].uvSetPoints[4]" 
-		" -type \"float2\" 0.62978387000000002 0.081621863000000003"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "uvSet[0].uvSetPoints[5]" 
-		" -type \"float2\" 0.69555568999999995 0.080001830999999995"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "uvSet[0].uvSetPoints[6]" 
-		" -type \"float2\" 0.62995064000000001 0.088392815999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "uvSet[0].uvSetPoints[7]" 
-		" -type \"float2\" 0.69572246000000004 0.086772792000000001"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "uvSet[0].uvSetPoints[8]" 
-		" -type \"float2\" 0.62997705000000004 0.089465447000000003"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "uvSet[0].uvSetPoints[9]" 
-		" -type \"float2\" 0.69574886999999996 0.087845422000000006"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "uvSet[0].uvSetPoints[10]" 
-		" -type \"float2\" 0.69643509000000003 0.072131826999999996"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "uvSet[0].uvSetPoints[11]" 
-		" -type \"float2\" 0.69660186999999996 0.078902788000000001"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "uvSet[0].uvSetPoints[12]" 
-		" -type \"float2\" 0.62851804 0.073804691000000006"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "uvSet[0].uvSetPoints[13]" 
-		" -type \"float2\" 0.62868482000000003 0.080575651999999998"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "pnts" 
-		" -s 8"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "pnts[0]" 
-		" -type \"float3\" -6.9730945000000002 3.37882950000000015 -8.88666729999999916"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "pnts[1]" 
-		" -type \"float3\" -6.11600880000000036 3.37882950000000015 -8.88666729999999916"
+		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "uvst[0].uvsp[0:13]" 
+		" -s 14 -type \"float2\" 0.62959069000000001 0.073778286999999998 0.69536251000000004 0.072158239999999998 0.62975745999999999 0.080549225000000002 0.69552928000000003 0.078929201000000004 0.62978387000000002 0.081621863000000003 0.69555568999999995 0.080001830999999995 0.62995064000000001 0.088392815999999999 0.69572246000000004 0.086772792000000001 0.62997705000000004 0.089465447000000003 0.69574886999999996 0.087845422000000006 0.69643509000000003 0.072131826999999996 0.69660186999999996 0.078902788000000001 0.62851804 0.073804691000000006 0.62868482000000003 0.080575651999999998"
 		
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "pnts[2]" 
-		" -type \"float3\" -6.9730945000000002 2.57000949999999984 -8.88666729999999916"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "pnts[3]" 
-		" -type \"float3\" -6.11600880000000036 2.57000949999999984 -8.88666729999999916"
-		
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "pnts[4]" 
-		" -type \"float3\" -6.9730945000000002 2.57000949999999984 -7.91695309999999974"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "pnts[5]" 
-		" -type \"float3\" -6.11600880000000036 2.57000949999999984 -7.91695309999999974"
-		
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "pnts[6]" 
-		" -type \"float3\" -6.9730945000000002 3.37882950000000015 -7.91695309999999974"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "pnts[7]" 
-		" -type \"float3\" -6.11600880000000036 3.37882950000000015 -7.91695309999999974"
+		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2" "pt[0:7]" 
+		" -s 8 -type \"float3\" -6.9730945000000002 3.37882950000000015 -8.88666729999999916 -6.11600880000000036 3.37882950000000015 -8.88666729999999916 -6.9730945000000002 2.57000949999999984 -8.88666729999999916 -6.11600880000000036 2.57000949999999984 -8.88666729999999916 -6.9730945000000002 2.57000949999999984 -7.91695309999999974 -6.11600880000000036 2.57000949999999984 -7.91695309999999974 -6.9730945000000002 3.37882950000000015 -7.91695309999999974 -6.11600880000000036 3.37882950000000015 -7.91695309999999974"
 		
 		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1" "rotatePivot" " -type \"double3\" -6.54455177125513732 2.97441947460174561 8.4018092155456543"
 		
@@ -2744,54 +2360,12 @@ createNode reference -n "ShelfRN";
 		
 		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "uvPivot" 
 		" -type \"double2\" 0.71672499179840088 0.5461459755897522"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "uvSet[0].uvSetPoints" 
-		" -s 14"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "uvSet[0].uvSetPoints[0]" 
-		" -type \"float2\" 0.62634599000000002 0.12373523"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "uvSet[0].uvSetPoints[1]" 
-		" -type \"float2\" 0.69213676000000002 0.12408785999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "uvSet[0].uvSetPoints[2]" 
-		" -type \"float2\" 0.62630969000000003 0.13050817000000001"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "uvSet[0].uvSetPoints[3]" 
-		" -type \"float2\" 0.69210046999999997 0.13086075"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "uvSet[0].uvSetPoints[4]" 
-		" -type \"float2\" 0.62630397000000004 0.13158114000000001"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "uvSet[0].uvSetPoints[5]" 
-		" -type \"float2\" 0.69209474000000004 0.13193369999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "uvSet[0].uvSetPoints[6]" 
-		" -type \"float2\" 0.62626767000000005 0.13835401999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "uvSet[0].uvSetPoints[7]" 
-		" -type \"float2\" 0.69205844000000005 0.13870658999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "uvSet[0].uvSetPoints[8]" 
-		" -type \"float2\" 0.62626194999999996 0.13942699"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "uvSet[0].uvSetPoints[9]" 
-		" -type \"float2\" 0.69205265999999999 0.13977955"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "uvSet[0].uvSetPoints[10]" 
-		" -type \"float2\" 0.69320970999999998 0.12409360999999999"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "uvSet[0].uvSetPoints[11]" 
-		" -type \"float2\" 0.69317340999999999 0.13086648000000001"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "uvSet[0].uvSetPoints[12]" 
-		" -type \"float2\" 0.62527305 0.12372950000000001"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "uvSet[0].uvSetPoints[13]" 
-		" -type \"float2\" 0.62523675000000001 0.13050243"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "pnts" 
-		" -s 8"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "pnts[0]" 
-		" -type \"float3\" -5.11600880000000036 3.37882950000000015 7.88666629999999991"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "pnts[1]" 
-		" -type \"float3\" -7.9730945000000002 3.37882950000000015 7.88666629999999991"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "pnts[2]" 
-		" -type \"float3\" -5.11600880000000036 2.57000949999999984 7.88666629999999991"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "pnts[3]" 
-		" -type \"float3\" -7.9730945000000002 2.57000949999999984 7.88666629999999991"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "pnts[4]" 
-		" -type \"float3\" -5.11600880000000036 2.57000949999999984 8.9169520999999996"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "pnts[5]" 
-		" -type \"float3\" -7.9730945000000002 2.57000949999999984 8.9169520999999996"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "pnts[6]" 
-		" -type \"float3\" -5.11600880000000036 3.37882950000000015 8.9169520999999996"
-		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "pnts[7]" 
-		" -type \"float3\" -7.9730945000000002 3.37882950000000015 8.9169520999999996"
+		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "uvst[0].uvsp[0:13]" 
+		" -s 14 -type \"float2\" 0.62634599000000002 0.12373523 0.69213676000000002 0.12408785999999999 0.62630969000000003 0.13050817000000001 0.69210046999999997 0.13086075 0.62630397000000004 0.13158114000000001 0.69209474000000004 0.13193369999999999 0.62626767000000005 0.13835401999999999 0.69205844000000005 0.13870658999999999 0.62626194999999996 0.13942699 0.69205265999999999 0.13977955 0.69320970999999998 0.12409360999999999 0.69317340999999999 0.13086648000000001 0.62527305 0.12372950000000001 0.62523675000000001 0.13050243"
+		
+		2 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1" "pt[0:7]" 
+		" -s 8 -type \"float3\" -5.11600880000000036 3.37882950000000015 7.88666629999999991 -7.9730945000000002 3.37882950000000015 7.88666629999999991 -5.11600880000000036 2.57000949999999984 7.88666629999999991 -7.9730945000000002 2.57000949999999984 7.88666629999999991 -5.11600880000000036 2.57000949999999984 8.9169520999999996 -7.9730945000000002 2.57000949999999984 8.9169520999999996 -5.11600880000000036 3.37882950000000015 8.9169520999999996 -7.9730945000000002 3.37882950000000015 8.9169520999999996"
+		
 		2 "|Shelf:Shelf|Shelf:Support" "rotatePivot" " -type \"double3\" -6.54455177125513643 0 0"
 		
 		2 "|Shelf:Shelf|Shelf:Support" "scalePivot" " -type \"double3\" -6.54455177125513643 0 0"
@@ -2802,517 +2376,65 @@ createNode reference -n "ShelfRN";
 		
 		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvPivot" 
 		" -type \"double2\" 0.74616971100804164 0.10346713339047908"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints" 
-		" -s 34"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[0]" 
-		" -type \"float2\" 0.78167056999999995 0.13357799000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[1]" 
-		" -type \"float2\" 0.78183298999999995 0.12983449"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[2]" 
-		" -type \"float2\" 0.77620560000000005 0.12922305000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[3]" 
-		" -type \"float2\" 0.78205590999999997 0.13361471999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[4]" 
-		" -type \"float2\" 0.77930695000000005 0.13402447000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[5]" 
-		" -type \"float2\" 0.77871972 0.1293214"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[6]" 
-		" -type \"float2\" 0.77928792999999996 0.12976483"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[7]" 
-		" -type \"float2\" 0.77931035000000004 0.1336154"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[8]" 
-		" -type \"float2\" 0.78610981000000002 0.077726707000000006"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[9]" 
-		" -type \"float2\" 0.78609812000000001 0.078158169999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[10]" 
-		" -type \"float2\" 0.78359056000000005 0.078090355"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[11]" 
-		" -type \"float2\" 0.78360224000000001 0.077658906999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[12]" 
-		" -type \"float2\" 0.78615648000000005 0.075998842999999996"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[13]" 
-		" -type \"float2\" 0.78364891000000003 0.075931034999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[14]" 
-		" -type \"float2\" 0.78345447999999995 0.075925790000000007"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[15]" 
-		" -type \"float2\" 0.78616178000000003 0.075804396999999996"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[16]" 
-		" -type \"float2\" 0.78339607 0.078085102000000003"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[17]" 
-		" -type \"float2\" 0.78340774999999996 0.077653654000000003"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[18]" 
-		" -type \"float2\" 0.78321373000000005 0.092025749000000004"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[19]" 
-		" -type \"float2\" 0.78572129999999996 0.092093557000000006"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[20]" 
-		" -type \"float2\" 0.78591579 0.092098810000000003"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[21]" 
-		" -type \"float2\" 0.78301929999999997 0.092020497000000007"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[22]" 
-		" -type \"float2\" 0.78630429999999996 0.077731960000000003"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[23]" 
-		" -type \"float2\" 0.78629260999999995 0.078163415"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[24]" 
-		" -type \"float2\" 0.78242343999999997 0.12942018999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[25]" 
-		" -type \"float2\" 0.77892309000000004 0.13363326"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[26]" 
-		" -type \"float2\" 0.78167503999999999 0.13398878"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[27]" 
-		" -type \"float2\" 0.78020358000000001 0.098742447999999997"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[28]" 
-		" -type \"float2\" 0.78270620000000002 0.098817021000000005"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[29]" 
-		" -type \"float2\" 0.77981365000000002 0.098923317999999996"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[30]" 
-		" -type \"float2\" 0.78308522999999997 0.099017500999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[31]" 
-		" -type \"float2\" 0.77730100999999996 0.098823792999999993"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[32]" 
-		" -type \"float2\" 0.78635096999999998 0.07600411"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvSet[0].uvSetPoints[33]" 
-		" -type \"float2\" 0.78365421000000002 0.075736590000000006"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts" 
-		" -s 24"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[0]" 
-		" -type \"float3\" -5.31420709999999996 3.35740110000000014 -8.389389"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[1]" 
-		" -type \"float3\" -8.61159040000000076 36.78022 -8.389389"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[2]" 
-		" -type \"float3\" -5.31420709999999996 2.3788292000000002 -8.389389"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[3]" 
-		" -type \"float3\" -8.61159040000000076 35.747093 -8.389389"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[4]" 
-		" -type \"float3\" -5.31420709999999996 2.3788292000000002 -7.25790410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[5]" 
-		" -type \"float3\" -8.61159040000000076 35.747093 -7.25790410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[6]" 
-		" -type \"float3\" -5.31420709999999996 3.35740110000000014 -7.25790410000000019"
-		
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[7]" 
-		" -type \"float3\" -8.61159040000000076 36.780205 -7.25790410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[8]" 
-		" -type \"float3\" -5.71898839999999975 3.35740110000000014 -8.389389"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[9]" 
-		" -type \"float3\" -5.77647590000000033 2.378859 -8.389389"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[10]" 
-		" -type \"float3\" -5.77647590000000033 2.378859 -7.25790410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[11]" 
-		" -type \"float3\" -5.71898839999999975 3.35740110000000014 -7.25790410000000019"
-		
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[12]" 
-		" -type \"float3\" -8.63198180000000015 36.780205 -7.25790410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[13]" 
-		" -type \"float3\" -8.63198180000000015 36.78022 -8.389389"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[14]" 
-		" -type \"float3\" -8.63198180000000015 35.747093 -7.25790410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[15]" 
-		" -type \"float3\" -8.63198180000000015 35.747093 -8.389389"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[16]" 
-		" -type \"float3\" -8.61159040000000076 2.3788292000000002 -8.389389"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[17]" 
-		" -type \"float3\" -8.61159040000000076 2.3788292000000002 -7.25790410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[18]" 
-		" -type \"float3\" -8.63198180000000015 2.3788292000000002 -8.389389"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[19]" 
-		" -type \"float3\" -8.63198180000000015 2.3788292000000002 -7.25790410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[20]" 
-		" -type \"float3\" -8.61159040000000076 40.917561 -7.25790410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[21]" 
-		" -type \"float3\" -8.61159040000000076 40.917572 -8.389389"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[22]" 
-		" -type \"float3\" -8.63198180000000015 40.917561 -7.25790410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pnts[23]" 
-		" -type \"float3\" -8.63198180000000015 40.917572 -8.389389"
+		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "uvst[0].uvsp[0:33]" 
+		(" -s 34 -type \"float2\" 0.78167056999999995 0.13357799000000001 0.78183298999999995 0.12983449 0.77620560000000005 0.12922305000000001 0.78205590999999997 0.13361471999999999 0.77930695000000005 0.13402447000000001 0.77871972 0.1293214 0.77928792999999996 0.12976483 0.77931035000000004 0.1336154 0.78610981000000002 0.077726707000000006 0.78609812000000001 0.078158169999999999 0.78359056000000005 0.078090355 0.78360224000000001 0.077658906999999999 0.78615648000000005 0.075998842999999996 0.78364891000000003 0.075931034999999994 0.78345447999999995 0.075925790000000007 0.78616178000000003 0.075804396999999996 0.78339607 0.078085102000000003 0.78340774999999996 0.077653654000000003 0.78321373000000005 0.092025749000000004 0.78572129999999996 0.092093557000000006 0.78591579 0.092098810000000003 0.78301929999999997 0.092020497000000007 0.78630429999999996 0.077731960000000003 0.78629260999999995 0.078163415 0.78242343999999997 0.12942018999999999 0.77892309000000004 0.13363326 0.78167503999999999 0.13398878 0.78020"
+		+ "358000000001 0.098742447999999997 0.78270620000000002 0.098817021000000005 0.77981365000000002 0.098923317999999996 0.78308522999999997 0.099017500999999994 0.77730100999999996 0.098823792999999993 0.78635096999999998 0.07600411 0.78365421000000002 0.075736590000000006"
+		)
+		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4" "pt[0:23]" 
+		(" -s 24 -type \"float3\" -5.31420709999999996 3.35740110000000014 -8.389389 -8.61159040000000076 36.78022 -8.389389 -5.31420709999999996 2.3788292000000002 -8.389389 -8.61159040000000076 35.747093 -8.389389 -5.31420709999999996 2.3788292000000002 -7.25790410000000019 -8.61159040000000076 35.747093 -7.25790410000000019 -5.31420709999999996 3.35740110000000014 -7.25790410000000019 -8.61159040000000076 36.780205 -7.25790410000000019 -5.71898839999999975 3.35740110000000014 -8.389389 -5.77647590000000033 2.378859 -8.389389 -5.77647590000000033 2.378859 -7.25790410000000019 -5.71898839999999975 3.35740110000000014 -7.25790410000000019 -8.63198180000000015 36.780205 -7.25790410000000019 -8.63198180000000015 36.78022 -8.389389 -8.63198180000000015 35.747093 -7.25790410000000019 -8.63198180000000015 35.747093 -8.389389 -8.61159040000000076 2.3788292000000002 -8.389389 -8.61159040000000076 2.3788292000000002 -7.25790410000000019 -8.63198180000000015 2.3788292000000002 -8.389389 -8.63198180000000015 2.3788292000000002 -7."
+		+ "25790410000000019 -8.61159040000000076 40.917561 -7.25790410000000019 -8.61159040000000076 40.917572 -8.389389 -8.63198180000000015 40.917561 -7.25790410000000019 -8.63198180000000015 40.917572 -8.389389"
+		)
 		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3" "rotatePivot" " -type \"double3\" -6.64365093049585909 2.45688211917877197 -2.72323930263519287"
 		
 		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3" "scalePivot" " -type \"double3\" -6.64365093049585909 2.45688211917877197 -2.72323930263519287"
 		
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints" 
-		" -s 34"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[0]" 
-		" -type \"float2\" 0.76294291000000003 0.13605146000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[1]" 
-		" -type \"float2\" 0.76310533000000003 0.13230796"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[2]" 
-		" -type \"float2\" 0.75747794000000002 0.13169652000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[3]" 
-		" -type \"float2\" 0.76332825000000004 0.13608819"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[4]" 
-		" -type \"float2\" 0.76057929000000002 0.13649796"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[5]" 
-		" -type \"float2\" 0.75999205999999997 0.13179484999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[6]" 
-		" -type \"float2\" 0.76056027000000004 0.13223831"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[7]" 
-		" -type \"float2\" 0.76058269000000001 0.13608888"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[8]" 
-		" -type \"float2\" 0.76208186 0.078080050999999998"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[9]" 
-		" -type \"float2\" 0.76207018000000004 0.078511514000000004"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[10]" 
-		" -type \"float2\" 0.75956254999999995 0.078443712999999998"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[11]" 
-		" -type \"float2\" 0.75957423000000002 0.078012258000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[12]" 
-		" -type \"float2\" 0.76212858999999999 0.076352187000000002"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[13]" 
-		" -type \"float2\" 0.75962096000000001 0.076284394000000005"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[14]" 
-		" -type \"float2\" 0.75942653000000004 0.076279133999999998"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[15]" 
-		" -type \"float2\" 0.76213383999999995 0.076157734000000005"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[16]" 
-		" -type \"float2\" 0.75936811999999998 0.078438437999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[17]" 
-		" -type \"float2\" 0.75937980000000005 0.078006989999999998"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[18]" 
-		" -type \"float2\" 0.75918578999999997 0.092379108000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[19]" 
-		" -type \"float2\" 0.76169341999999995 0.092446930999999996"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[20]" 
-		" -type \"float2\" 0.76188785000000003 0.092452175999999997"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[21]" 
-		" -type \"float2\" 0.75899136 0.092373855000000005"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[22]" 
-		" -type \"float2\" 0.76227628999999997 0.078085311000000004"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[23]" 
-		" -type \"float2\" 0.76226466999999998 0.078516773999999998"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[24]" 
-		" -type \"float2\" 0.76369578000000005 0.13189366"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[25]" 
-		" -type \"float2\" 0.76019543000000001 0.13610674"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[26]" 
-		" -type \"float2\" 0.76294737999999995 0.13646227"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[27]" 
-		" -type \"float2\" 0.76147591999999997 0.10121591000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[28]" 
-		" -type \"float2\" 0.76397859999999995 0.10129046999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[29]" 
-		" -type \"float2\" 0.76108604999999996 0.10139678000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[30]" 
-		" -type \"float2\" 0.76435757000000004 0.10149096000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[31]" 
-		" -type \"float2\" 0.75857335000000004 0.10129724"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[32]" 
-		" -type \"float2\" 0.76232301999999996 0.076357446999999995"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvSet[0].uvSetPoints[33]" 
-		" -type \"float2\" 0.75962620999999997 0.076089933999999998"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts" 
-		" -s 24"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[0]" 
-		" -type \"float3\" -5.31420709999999996 3.35740110000000014 -3.2889835999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[1]" 
-		" -type \"float3\" -8.61159040000000076 36.78022 -3.2889835999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[2]" 
-		" -type \"float3\" -5.31420709999999996 2.3788292000000002 -3.2889835999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[3]" 
-		" -type \"float3\" -8.61159040000000076 35.747093 -3.2889835999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[4]" 
-		" -type \"float3\" -5.31420709999999996 2.3788292000000002 -2.15749879999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[5]" 
-		" -type \"float3\" -8.61159040000000076 35.747093 -2.15749879999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[6]" 
-		" -type \"float3\" -5.31420709999999996 3.35740110000000014 -2.15749879999999994"
-		
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[7]" 
-		" -type \"float3\" -8.61159040000000076 36.780205 -2.15749879999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[8]" 
-		" -type \"float3\" -5.71898839999999975 3.35740110000000014 -3.2889835999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[9]" 
-		" -type \"float3\" -5.77647590000000033 2.378859 -3.2889835999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[10]" 
-		" -type \"float3\" -5.77647590000000033 2.378859 -2.15749879999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[11]" 
-		" -type \"float3\" -5.71898839999999975 3.35740110000000014 -2.15749879999999994"
-		
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[12]" 
-		" -type \"float3\" -8.63198180000000015 36.780205 -2.15749879999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[13]" 
-		" -type \"float3\" -8.63198180000000015 36.78022 -3.2889835999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[14]" 
-		" -type \"float3\" -8.63198180000000015 35.747093 -2.15749879999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[15]" 
-		" -type \"float3\" -8.63198180000000015 35.747093 -3.2889835999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[16]" 
-		" -type \"float3\" -8.61159040000000076 2.3788292000000002 -3.2889835999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[17]" 
-		" -type \"float3\" -8.61159040000000076 2.3788292000000002 -2.15749879999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[18]" 
-		" -type \"float3\" -8.63198180000000015 2.3788292000000002 -3.2889835999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[19]" 
-		" -type \"float3\" -8.63198180000000015 2.3788292000000002 -2.15749879999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[20]" 
-		" -type \"float3\" -8.61159040000000076 40.917561 -2.15749879999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[21]" 
-		" -type \"float3\" -8.61159040000000076 40.917572 -3.2889835999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[22]" 
-		" -type \"float3\" -8.63198180000000015 40.917561 -2.15749879999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pnts[23]" 
-		" -type \"float3\" -8.63198180000000015 40.917572 -3.2889835999999999"
+		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "uvst[0].uvsp[0:33]" 
+		(" -s 34 -type \"float2\" 0.76294291000000003 0.13605146000000001 0.76310533000000003 0.13230796 0.75747794000000002 0.13169652000000001 0.76332825000000004 0.13608819 0.76057929000000002 0.13649796 0.75999205999999997 0.13179484999999999 0.76056027000000004 0.13223831 0.76058269000000001 0.13608888 0.76208186 0.078080050999999998 0.76207018000000004 0.078511514000000004 0.75956254999999995 0.078443712999999998 0.75957423000000002 0.078012258000000001 0.76212858999999999 0.076352187000000002 0.75962096000000001 0.076284394000000005 0.75942653000000004 0.076279133999999998 0.76213383999999995 0.076157734000000005 0.75936811999999998 0.078438437999999999 0.75937980000000005 0.078006989999999998 0.75918578999999997 0.092379108000000001 0.76169341999999995 0.092446930999999996 0.76188785000000003 0.092452175999999997 0.75899136 0.092373855000000005 0.76227628999999997 0.078085311000000004 0.76226466999999998 0.078516773999999998 0.76369578000000005 0.13189366 0.76019543000000001 0.13610674 0.76294737999999995 0.13646"
+		+ "227 0.76147591999999997 0.10121591000000001 0.76397859999999995 0.10129046999999999 0.76108604999999996 0.10139678000000001 0.76435757000000004 0.10149096000000001 0.75857335000000004 0.10129724 0.76232301999999996 0.076357446999999995 0.75962620999999997 0.076089933999999998"
+		)
+		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3" "pt[0:23]" 
+		(" -s 24 -type \"float3\" -5.31420709999999996 3.35740110000000014 -3.2889835999999999 -8.61159040000000076 36.78022 -3.2889835999999999 -5.31420709999999996 2.3788292000000002 -3.2889835999999999 -8.61159040000000076 35.747093 -3.2889835999999999 -5.31420709999999996 2.3788292000000002 -2.15749879999999994 -8.61159040000000076 35.747093 -2.15749879999999994 -5.31420709999999996 3.35740110000000014 -2.15749879999999994 -8.61159040000000076 36.780205 -2.15749879999999994 -5.71898839999999975 3.35740110000000014 -3.2889835999999999 -5.77647590000000033 2.378859 -3.2889835999999999 -5.77647590000000033 2.378859 -2.15749879999999994 -5.71898839999999975 3.35740110000000014 -2.15749879999999994 -8.63198180000000015 36.780205 -2.15749879999999994 -8.63198180000000015 36.78022 -3.2889835999999999 -8.63198180000000015 35.747093 -2.15749879999999994 -8.63198180000000015 35.747093 -3.2889835999999999 -8.61159040000000076 2.3788292000000002 -3.2889835999999999 -8.61159040000000076 2.3788292000000002 -2.15749879999999994 -8."
+		+ "63198180000000015 2.3788292000000002 -3.2889835999999999 -8.63198180000000015 2.3788292000000002 -2.15749879999999994 -8.61159040000000076 40.917561 -2.15749879999999994 -8.61159040000000076 40.917572 -3.2889835999999999 -8.63198180000000015 40.917561 -2.15749879999999994 -8.63198180000000015 40.917572 -3.2889835999999999"
+		)
 		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2" "rotatePivot" " -type \"double3\" -6.64365093049585997 2.45688211917877197 4.04262351989746094"
 		
 		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2" "scalePivot" " -type \"double3\" -6.64365093049585997 2.45688211917877197 4.04262351989746094"
 		
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints" 
-		" -s 34"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[0]" 
-		" -type \"float2\" 0.72760767000000004 0.13605146000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[1]" 
-		" -type \"float2\" 0.72777009000000004 0.13230795000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[2]" 
-		" -type \"float2\" 0.72214275999999999 0.13169650999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[3]" 
-		" -type \"float2\" 0.72799301000000005 0.13608818"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[4]" 
-		" -type \"float2\" 0.72524405000000003 0.13649796"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[5]" 
-		" -type \"float2\" 0.72465681999999998 0.13179484999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[6]" 
-		" -type \"float2\" 0.72522509000000002 0.1322383"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[7]" 
-		" -type \"float2\" 0.72524743999999997 0.13608888"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[8]" 
-		" -type \"float2\" 0.73028015999999996 0.074899882000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[9]" 
-		" -type \"float2\" 0.73026848 0.075331344999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[10]" 
-		" -type \"float2\" 0.72776085000000001 0.075263529999999995"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[11]" 
-		" -type \"float2\" 0.72777252999999997 0.074832081999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[12]" 
-		" -type \"float2\" 0.73032682999999998 0.073172018000000005"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[13]" 
-		" -type \"float2\" 0.72781925999999997 0.073104224999999995"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[14]" 
-		" -type \"float2\" 0.72762477000000003 0.073098965000000002"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[15]" 
-		" -type \"float2\" 0.73033208000000005 0.072977564999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[16]" 
-		" -type \"float2\" 0.72756642000000005 0.075258276999999998"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[17]" 
-		" -type \"float2\" 0.72757804000000004 0.074826828999999997"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[18]" 
-		" -type \"float2\" 0.72738409000000004 0.089198940000000004"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[19]" 
-		" -type \"float2\" 0.72989172000000002 0.089266755000000003"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[20]" 
-		" -type \"float2\" 0.73008609000000002 0.089272007"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[21]" 
-		" -type \"float2\" 0.72718965999999996 0.089193686999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[22]" 
-		" -type \"float2\" 0.73047459000000003 0.074905134999999998"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[23]" 
-		" -type \"float2\" 0.73046290999999997 0.075336598000000005"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[24]" 
-		" -type \"float2\" 0.72836053000000001 0.13189366"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[25]" 
-		" -type \"float2\" 0.72486013000000005 0.13610673000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[26]" 
-		" -type \"float2\" 0.72761213999999996 0.13646227"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[27]" 
-		" -type \"float2\" 0.72614067999999998 0.1012159"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[28]" 
-		" -type \"float2\" 0.72864335999999996 0.10129046"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[29]" 
-		" -type \"float2\" 0.72575080000000003 0.10139677"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[30]" 
-		" -type \"float2\" 0.72902237999999997 0.10149094"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[31]" 
-		" -type \"float2\" 0.72323811000000005 0.10129723"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[32]" 
-		" -type \"float2\" 0.73052132000000003 0.073177277999999998"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvSet[0].uvSetPoints[33]" 
-		" -type \"float2\" 0.72782451000000004 0.072909765000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts" 
-		" -s 24"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[0]" 
-		" -type \"float3\" -5.31420709999999996 3.35740110000000014 3.47687910000000011"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[1]" 
-		" -type \"float3\" -8.61159040000000076 36.78022 3.47687910000000011"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[2]" 
-		" -type \"float3\" -5.31420709999999996 2.3788292000000002 3.47687910000000011"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[3]" 
-		" -type \"float3\" -8.61159040000000076 35.747093 3.47687910000000011"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[4]" 
-		" -type \"float3\" -5.31420709999999996 2.3788292000000002 4.60836410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[5]" 
-		" -type \"float3\" -8.61159040000000076 35.747093 4.60836410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[6]" 
-		" -type \"float3\" -5.31420709999999996 3.35740110000000014 4.60836410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[7]" 
-		" -type \"float3\" -8.61159040000000076 36.780205 4.60836410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[8]" 
-		" -type \"float3\" -5.71898839999999975 3.35740110000000014 3.47687910000000011"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[9]" 
-		" -type \"float3\" -5.77647590000000033 2.378859 3.47687910000000011"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[10]" 
-		" -type \"float3\" -5.77647590000000033 2.378859 4.60836410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[11]" 
-		" -type \"float3\" -5.71898839999999975 3.35740110000000014 4.60836410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[12]" 
-		" -type \"float3\" -8.63198180000000015 36.780205 4.60836410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[13]" 
-		" -type \"float3\" -8.63198180000000015 36.78022 3.47687910000000011"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[14]" 
-		" -type \"float3\" -8.63198180000000015 35.747093 4.60836410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[15]" 
-		" -type \"float3\" -8.63198180000000015 35.747093 3.47687910000000011"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[16]" 
-		" -type \"float3\" -8.61159040000000076 2.3788292000000002 3.47687910000000011"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[17]" 
-		" -type \"float3\" -8.61159040000000076 2.3788292000000002 4.60836410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[18]" 
-		" -type \"float3\" -8.63198180000000015 2.3788292000000002 3.47687910000000011"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[19]" 
-		" -type \"float3\" -8.63198180000000015 2.3788292000000002 4.60836410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[20]" 
-		" -type \"float3\" -8.61159040000000076 40.917561 4.60836410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[21]" 
-		" -type \"float3\" -8.61159040000000076 40.917572 3.47687910000000011"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[22]" 
-		" -type \"float3\" -8.63198180000000015 40.917561 4.60836410000000019"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pnts[23]" 
-		" -type \"float3\" -8.63198180000000015 40.917572 3.47687910000000011"
+		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "uvst[0].uvsp[0:33]" 
+		(" -s 34 -type \"float2\" 0.72760767000000004 0.13605146000000001 0.72777009000000004 0.13230795000000001 0.72214275999999999 0.13169650999999999 0.72799301000000005 0.13608818 0.72524405000000003 0.13649796 0.72465681999999998 0.13179484999999999 0.72522509000000002 0.1322383 0.72524743999999997 0.13608888 0.73028015999999996 0.074899882000000001 0.73026848 0.075331344999999994 0.72776085000000001 0.075263529999999995 0.72777252999999997 0.074832081999999994 0.73032682999999998 0.073172018000000005 0.72781925999999997 0.073104224999999995 0.72762477000000003 0.073098965000000002 0.73033208000000005 0.072977564999999994 0.72756642000000005 0.075258276999999998 0.72757804000000004 0.074826828999999997 0.72738409000000004 0.089198940000000004 0.72989172000000002 0.089266755000000003 0.73008609000000002 0.089272007 0.72718965999999996 0.089193686999999994 0.73047459000000003 0.074905134999999998 0.73046290999999997 0.075336598000000005 0.72836053000000001 0.13189366 0.72486013000000005 0.13610673000000001 0.72761213"
+		+ "999999996 0.13646227 0.72614067999999998 0.1012159 0.72864335999999996 0.10129046 0.72575080000000003 0.10139677 0.72902237999999997 0.10149094 0.72323811000000005 0.10129723 0.73052132000000003 0.073177277999999998 0.72782451000000004 0.072909765000000001"
+		)
+		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2" "pt[0:23]" 
+		(" -s 24 -type \"float3\" -5.31420709999999996 3.35740110000000014 3.47687910000000011 -8.61159040000000076 36.78022 3.47687910000000011 -5.31420709999999996 2.3788292000000002 3.47687910000000011 -8.61159040000000076 35.747093 3.47687910000000011 -5.31420709999999996 2.3788292000000002 4.60836410000000019 -8.61159040000000076 35.747093 4.60836410000000019 -5.31420709999999996 3.35740110000000014 4.60836410000000019 -8.61159040000000076 36.780205 4.60836410000000019 -5.71898839999999975 3.35740110000000014 3.47687910000000011 -5.77647590000000033 2.378859 3.47687910000000011 -5.77647590000000033 2.378859 4.60836410000000019 -5.71898839999999975 3.35740110000000014 4.60836410000000019 -8.63198180000000015 36.780205 4.60836410000000019 -8.63198180000000015 36.78022 3.47687910000000011 -8.63198180000000015 35.747093 4.60836410000000019 -8.63198180000000015 35.747093 3.47687910000000011 -8.61159040000000076 2.3788292000000002 3.47687910000000011 -8.61159040000000076 2.3788292000000002 4.60836410000000019 -8.631981800"
+		+ "00000015 2.3788292000000002 3.47687910000000011 -8.63198180000000015 2.3788292000000002 4.60836410000000019 -8.61159040000000076 40.917561 4.60836410000000019 -8.61159040000000076 40.917572 3.47687910000000011 -8.63198180000000015 40.917561 4.60836410000000019 -8.63198180000000015 40.917572 3.47687910000000011"
+		)
 		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1" "rotatePivot" " -type \"double3\" -6.64365093049585997 2.45688211917877197 7.9376068115234375"
 		
 		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1" "scalePivot" " -type \"double3\" -6.64365093049585997 2.45688211917877197 7.9376068115234375"
 		
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints" 
-		" -s 34"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[0]" 
-		" -type \"float2\" 0.71170681999999996 0.13110456000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[1]" 
-		" -type \"float2\" 0.71186923999999996 0.12736104000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[2]" 
-		" -type \"float2\" 0.70624191000000003 0.12674959999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[3]" 
-		" -type \"float2\" 0.71209215999999997 0.13114128"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[4]" 
-		" -type \"float2\" 0.70934324999999998 0.13155106"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[5]" 
-		" -type \"float2\" 0.70875597000000001 0.12684793999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[6]" 
-		" -type \"float2\" 0.70932417999999997 0.1272914"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[7]" 
-		" -type \"float2\" 0.70934659 0.13114199000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[8]" 
-		" -type \"float2\" 0.70907903000000005 0.072426415999999993"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[9]" 
-		" -type \"float2\" 0.70906734000000005 0.072857863999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[10]" 
-		" -type \"float2\" 0.70655977999999997 0.072790056000000006"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[11]" 
-		" -type \"float2\" 0.70657139999999996 0.072358616000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[12]" 
-		" -type \"float2\" 0.70912576000000005 0.070698544000000002"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[13]" 
-		" -type \"float2\" 0.70661812999999996 0.070630752000000005"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[14]" 
-		" -type \"float2\" 0.70642369999999999 0.070625490999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[15]" 
-		" -type \"float2\" 0.709131 0.070504083999999995"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[16]" 
-		" -type \"float2\" 0.70636529000000003 0.072784803999999995"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[17]" 
-		" -type \"float2\" 0.70637696999999999 0.072353355999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[18]" 
-		" -type \"float2\" 0.70618289999999995 0.086725488000000003"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[19]" 
-		" -type \"float2\" 0.70869051999999999 0.086793288999999996"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[20]" 
-		" -type \"float2\" 0.70888501000000004 0.086798549000000003"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[21]" 
-		" -type \"float2\" 0.70598846999999998 0.086720213000000004"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[22]" 
-		" -type \"float2\" 0.70927346000000002 0.072431660999999994"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[23]" 
-		" -type \"float2\" 0.70926177999999995 0.072863124000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[24]" 
-		" -type \"float2\" 0.71245968000000004 0.12694673000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[25]" 
-		" -type \"float2\" 0.70895927999999997 0.13115983000000001"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[26]" 
-		" -type \"float2\" 0.71171129 0.13151536999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[27]" 
-		" -type \"float2\" 0.71023983000000002 0.096268943999999995"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[28]" 
-		" -type \"float2\" 0.71274251 0.096343517000000004"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[29]" 
-		" -type \"float2\" 0.70984988999999998 0.09644983"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[30]" 
-		" -type \"float2\" 0.71312153 0.096544005000000002"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[31]" 
-		" -type \"float2\" 0.70733725999999997 0.096350290000000005"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[32]" 
-		" -type \"float2\" 0.70932019000000002 0.070703796999999999"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvSet[0].uvSetPoints[33]" 
-		" -type \"float2\" 0.70662343999999999 0.070436290999999998"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts" 
-		" -s 24"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[0]" 
-		" -type \"float3\" -5.31420709999999996 3.35740110000000014 7.37186240000000037"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[1]" 
-		" -type \"float3\" -8.61159040000000076 36.78022 7.37186240000000037"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[2]" 
-		" -type \"float3\" -5.31420709999999996 2.3788292000000002 7.37186240000000037"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[3]" 
-		" -type \"float3\" -8.61159040000000076 35.747093 7.37186240000000037"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[4]" 
-		" -type \"float3\" -5.31420709999999996 2.3788292000000002 8.50334739999999911"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[5]" 
-		" -type \"float3\" -8.61159040000000076 35.747093 8.50334739999999911"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[6]" 
-		" -type \"float3\" -5.31420709999999996 3.35740110000000014 8.50334739999999911"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[7]" 
-		" -type \"float3\" -8.61159040000000076 36.780205 8.50334739999999911"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[8]" 
-		" -type \"float3\" -5.71898839999999975 3.35740110000000014 7.37186240000000037"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[9]" 
-		" -type \"float3\" -5.77647590000000033 2.378859 7.37186240000000037"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[10]" 
-		" -type \"float3\" -5.77647590000000033 2.378859 8.50334739999999911"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[11]" 
-		" -type \"float3\" -5.71898839999999975 3.35740110000000014 8.50334739999999911"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[12]" 
-		" -type \"float3\" -8.63198180000000015 36.780205 8.50334739999999911"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[13]" 
-		" -type \"float3\" -8.63198180000000015 36.78022 7.37186240000000037"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[14]" 
-		" -type \"float3\" -8.63198180000000015 35.747093 8.50334739999999911"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[15]" 
-		" -type \"float3\" -8.63198180000000015 35.747093 7.37186240000000037"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[16]" 
-		" -type \"float3\" -8.61159040000000076 2.3788292000000002 7.37186240000000037"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[17]" 
-		" -type \"float3\" -8.61159040000000076 2.3788292000000002 8.50334739999999911"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[18]" 
-		" -type \"float3\" -8.63198180000000015 2.3788292000000002 7.37186240000000037"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[19]" 
-		" -type \"float3\" -8.63198180000000015 2.3788292000000002 8.50334739999999911"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[20]" 
-		" -type \"float3\" -8.61159040000000076 40.917561 8.50334739999999911"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[21]" 
-		" -type \"float3\" -8.61159040000000076 40.917572 7.37186240000000037"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[22]" 
-		" -type \"float3\" -8.63198180000000015 40.917561 8.50334739999999911"
-		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pnts[23]" 
-		" -type \"float3\" -8.63198180000000015 40.917572 7.37186240000000037"
-		3 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
+		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "uvst[0].uvsp[0:33]" 
+		(" -s 34 -type \"float2\" 0.71170681999999996 0.13110456000000001 0.71186923999999996 0.12736104000000001 0.70624191000000003 0.12674959999999999 0.71209215999999997 0.13114128 0.70934324999999998 0.13155106 0.70875597000000001 0.12684793999999999 0.70932417999999997 0.1272914 0.70934659 0.13114199000000001 0.70907903000000005 0.072426415999999993 0.70906734000000005 0.072857863999999994 0.70655977999999997 0.072790056000000006 0.70657139999999996 0.072358616000000001 0.70912576000000005 0.070698544000000002 0.70661812999999996 0.070630752000000005 0.70642369999999999 0.070625490999999999 0.709131 0.070504083999999995 0.70636529000000003 0.072784803999999995 0.70637696999999999 0.072353355999999994 0.70618289999999995 0.086725488000000003 0.70869051999999999 0.086793288999999996 0.70888501000000004 0.086798549000000003 0.70598846999999998 0.086720213000000004 0.70927346000000002 0.072431660999999994 0.70926177999999995 0.072863124000000001 0.71245968000000004 0.12694673000000001 0.70895927999999997 0.131159830000"
+		+ "00001 0.71171129 0.13151536999999999 0.71023983000000002 0.096268943999999995 0.71274251 0.096343517000000004 0.70984988999999998 0.09644983 0.71312153 0.096544005000000002 0.70733725999999997 0.096350290000000005 0.70932019000000002 0.070703796999999999 0.70662343999999999 0.070436290999999998"
+		)
+		2 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1" "pt[0:23]" 
+		(" -s 24 -type \"float3\" -5.31420709999999996 3.35740110000000014 7.37186240000000037 -8.61159040000000076 36.78022 7.37186240000000037 -5.31420709999999996 2.3788292000000002 7.37186240000000037 -8.61159040000000076 35.747093 7.37186240000000037 -5.31420709999999996 2.3788292000000002 8.50334739999999911 -8.61159040000000076 35.747093 8.50334739999999911 -5.31420709999999996 3.35740110000000014 8.50334739999999911 -8.61159040000000076 36.780205 8.50334739999999911 -5.71898839999999975 3.35740110000000014 7.37186240000000037 -5.77647590000000033 2.378859 7.37186240000000037 -5.77647590000000033 2.378859 8.50334739999999911 -5.71898839999999975 3.35740110000000014 8.50334739999999911 -8.63198180000000015 36.780205 8.50334739999999911 -8.63198180000000015 36.78022 7.37186240000000037 -8.63198180000000015 35.747093 8.50334739999999911 -8.63198180000000015 35.747093 7.37186240000000037 -8.61159040000000076 2.3788292000000002 7.37186240000000037 -8.61159040000000076 2.3788292000000002 8.50334739999999911 -8.631981800"
+		+ "00000015 2.3788292000000002 7.37186240000000037 -8.63198180000000015 2.3788292000000002 8.50334739999999911 -8.61159040000000076 40.917561 8.50334739999999911 -8.61159040000000076 40.917572 7.37186240000000037 -8.63198180000000015 40.917561 8.50334739999999911 -8.63198180000000015 40.917572 7.37186240000000037"
+		)
 		3 "|Shelf:Shelf|Shelf:Edging|Shelf:LongEdge|Shelf:LongEdgeShape.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape.instObjGroups" ":initialShadingGroup.dagSetMembers" 
 		"-na"
-		3 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3.instObjGroups" 
-		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge2|Shelf:SideEdgeShape2.instObjGroups" 
+		3 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Shelf:Shelf|Shelf:Edging|Shelf:SideEdge1|Shelf:SideEdgeShape1.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		3 "|Shelf:Shelf|Shelf:Support|Shelf:Support2|Shelf:SupportShape2.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1.instObjGroups" 
+		3 "|Shelf:Shelf|Shelf:Support|Shelf:Support4|Shelf:SupportShape4.instObjGroups" 
+		":initialShadingGroup.dagSetMembers" "-na"
+		3 "|Shelf:Shelf|Shelf:Support|Shelf:Support3|Shelf:SupportShape3.instObjGroups" 
 		":initialShadingGroup.dagSetMembers" "-na"
 		5 3 "ShelfRN" "|Shelf:Shelf|Shelf:Shelf|Shelf:ShelfShape.instObjGroups" 
 		"ShelfRN.placeHolderList[1]" ":initialShadingGroup.dsm"
@@ -3330,6 +2452,62 @@ createNode reference -n "ShelfRN";
 		"ShelfRN.placeHolderList[7]" ":initialShadingGroup.dsm"
 		5 3 "ShelfRN" "|Shelf:Shelf|Shelf:Support|Shelf:Support1|Shelf:SupportShape1.instObjGroups" 
 		"ShelfRN.placeHolderList[8]" ":initialShadingGroup.dsm";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "PotRN";
+	rename -uid "6595E2C2-49B6-8064-D80D-D1889B69DBA9";
+	setAttr ".phl[1]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"PotRN"
+		"PotRN" 0
+		"PotRN" 12
+		2 "|Pot:pCylinder1" "translate" " -type \"double3\" -0.46469263760145152 1.54853538271494084 -2.26128964677569622"
+		
+		2 "|Pot:pCylinder1" "scale" " -type \"double3\" 0.37564329340103136 0.43915251816815487 0.37564329340103136"
+		
+		2 "|Pot:pCylinder1" "rotatePivot" " -type \"double3\" 1.1920928955078122e-07 1.49315520528249568 1.1920928955078122e-07"
+		
+		2 "|Pot:pCylinder1" "scalePivot" " -type \"double3\" 1.1920928955078125e-07 0.83784055168678395 1.1920928955078125e-07"
+		
+		2 "|Pot:pCylinder1" "scalePivotTranslate" " -type \"double3\" 0 0.65531465359570984 0"
+		
+		2 "|Pot:pCylinder1|Pot:pCylinderShape1" "uvPivot" " -type \"double2\" 0.29292850941419601 0.30244255810976028"
+		
+		2 "|Pot:pCylinder1|Pot:pCylinderShape1" "uvSet[0].uvSetPoints" " -s 730"
+		2 "|Pot:pCylinder1|Pot:pCylinderShape1" "uvst[0].uvsp[0:249]" (" -type \"float2\" 0.35031741999999999 0.26643287999999998 0.35215467 0.26898557000000001 0.35337782000000001 0.27188307 0.35392559000000001 0.27498007000000002 0.35377038 0.27812134999999999 0.35292011000000001 0.28114932999999998 0.35141741999999998 0.28391223999999998 0.34933752000000001 0.28627144999999998 0.34678482999999999 0.28810870999999999 0.34388732999999999 0.28933185 0.34079032999999997 0.28987955999999998 0.33764905000000001 0.28972440999999999 0.33462101 0.28887415 0.33185816000000001 0.28737146000000002 0.32949895000000001 0.28529155 0.32766169000000001 0.28273885999999998 0.32643854999999999 0.27984135999999998 0.32589084000000001 0.27674437000000002 0.32604599000000001 0.27360308 0.32689618999999998 0.27057511000000001 0.32839893999999997 0.26781219000000001 0.33047884999999999 0.26545298000000001 0.33303154000000001 0.26361579000000002 0.33592904000000001 0.26239257999999999 0.33902602999999998 0.26184487000000001 0.34216732 0.26200002 0.34519535000000001 0.26285027999999999 0.3479582099999999"
+		+ "9 0.26435298000000002 0.25487845999999997 0.25832111000000002 0.24573939 0.26189178000000002 0.24695553000000001 0.26293576000000002 0.24278067 0.24403532 0.24182115000000001 0.24531907999999999 0.26235223000000002 0.24018754 0.26102966 0.2392823 0.26461088999999999 0.25962371000000001 0.26568669 0.25843572999999997 0.24419684999999999 0.26120198 0.24526328999999999 0.26240838 0.246527 0.26348083999999999 0.24788273999999999 0.26433479999999998 0.24336489 0.24244974999999999 0.24223317 0.24359513999999999 0.24124838000000001 0.24492832 0.24048783000000001 0.24633856000000001 0.26396078000000001 0.24070523999999999 0.26276922000000003 0.23962219000000001 0.26139623000000001 0.23869376 0.25995552999999999 0.2379926 0.26388036999999998 0.26114744000000001 0.26511460999999997 0.26011336000000002 0.26622026999999998 0.25887853 0.26710981 0.25754589 0.24759127 0.28636050000000002 0.24753578000000001 0.28618329999999997 0.25084912999999998 0.28522723999999999 0.25089793999999999 0.28540647000000002 0.2518301 0.28881"
+		+ "722999999998 0.24866019 0.28976780000000002 0.24551807 0.29080223999999999 0.24432731999999999 0.28747784999999998 0.24243115000000001 0.29198848999999999 0.24110164000000001 0.28869957000000002 0.23939131 0.29328959999999998 0.23792580999999999 0.29005075000000002 0.23640992 0.29470664000000002 0.23480980000000001 0.29153173999999998 0.32148950999999998 0.30008607999999998 0.23172462999999999 0.29313874000000001 0.31874079 0.29829602999999999 0.32060146 0.29529034999999998 0.31588381999999998 0.29664189000000002 0.31763398999999998 0.293531 0.31297766999999999 0.29506564000000002 0.31458121999999999 0.29191971 0.30999726 0.29363244999999999 0.31147998999999998 0.29041003999999998 0.30696410000000002 0.29231100999999998 0.30832058000000001 0.28902583999999998 0.30388116999999998 0.29110718000000002 0.30511564000000002 0.28777277000000001 0.30075102999999997 0.29002923000000003 0.30186331 0.28662937999999999 0.29759341 0.2890411 0.29855901000000001 0.2856397 0.29438859000000001 0.28821582000000001 0.2952353400"
+		+ "0000001 0.28474664999999999 0.29116416000000001 0.28747665999999999 0.29186385999999997 0.28401554000000001 0.28790813999999998 0.28689575 0.28847151999999998 0.28339362000000001 0.28463155000000001 0.28643674000000002 0.28505659 0.28290801999999998 0.28133857000000001 0.28610437999999999 0.28163295999999999 0.282561 0.27803402999999999 0.28590601999999998 0.27819312000000002 0.28233236 0.27472704999999997 0.28580153000000003 0.27474439 0.28226578000000002 0.27141832999999999 0.28586655999999999 0.27130305999999998 0.28229736999999999 0.26811379000000002 0.28601979999999999 0.26785903999999999 0.28249794 0.26482135000000001 0.28633397999999999 0.2644242 0.28280919999999998 0.26154171999999998 0.28677118000000001 0.26100426999999998 0.28325783999999998 0.25828040000000002 0.28733468000000001 0.25761306 0.28384232999999998 0.35370463000000002 0.35842991000000002 0.35225147000000001 0.36153960000000002 0.35023278000000002 0.36431509000000001 0.34772563000000001 0.36665892999999999 0.34480213999999998 0.368446710"
+		+ "00000001 0.32759516999999999 0.36750381999999998 0.32488405999999997 0.36537104999999998 0.32263607 0.36278444999999998 0.32095133999999997 0.35979366000000002 0.31986724999999999 0.35653745999999997 0.31941837000000001 0.35313498999999998 0.31966435999999998 0.34971880999999999 0.32053791999999998 0.34639943000000001 0.32207024000000001 0.34332812000000001 0.32413851999999999 0.34059774999999998 0.32671928 0.33833461999999997 0.32968354 0.33660483000000002 0.33292126999999999 0.33546668000000002 0.33631509999999998 0.33500582000000001 0.33974320000000002 0.33517897000000002 0.34306383000000001 0.33604789000000002 0.34616077000000001 0.33751118000000002 0.34890568 0.33957207 0.35120738000000001 0.34211778999999998 0.35298627999999999 0.34505278 0.35413438000000003 0.34827960000000002 0.35466914999999999 0.35167020999999998 0.35450071 0.35509837 0.25504379999999999 0.28803039000000003 0.35468548999999999 0.35512483 0.25423801000000001 0.28454518000000001 0.24426495000000001 0.28730291000000002 0.24103252999999"
+		+ "999 0.28852718999999999 0.23784996999999999 0.28988117000000002 0.23472829000000001 0.29136490999999998 0.32363283999999998 0.29699755 0.32069772000000002 0.29513161999999998 0.31772494000000001 0.29336910999999999 0.31466579 0.29175435999999999 0.31155807000000002 0.29024154000000002 0.30839204999999997 0.28885435999999998 0.30518061000000002 0.28759878999999999 0.30192112999999998 0.28645289000000002 0.29860985000000001 0.28546106999999998 0.29527949999999997 0.28456628 0.29190086999999998 0.28383355999999998 0.28850150000000002 0.28321039999999997 0.28507948 0.28272366999999998 0.28164887 0.28237599000000002 0.27820146000000001 0.28214681000000003 0.27474552000000002 0.28207999 0.27129715999999998 0.28211175999999999 0.26784586999999999 0.28231263000000001 0.26440394 0.2826246 0.26097679000000001 0.28307408000000001 0.25757872999999998 0.28365975999999998 0.35351121000000002 0.35836244 0.35306829000000001 0.35489523000000001 0.35207402999999998 0.36143600999999997 0.35233259 0.35795099000000002 0.350079660"
+		+ "00000001 0.36417823999999999 0.35100091 0.36080681999999997 0.34760171000000001 0.36649573000000002 0.34915262000000002 0.36335342999999998 0.34471244000000001 0.36826198999999998 0.34684675999999998 0.36550157999999999 0.32770210999999999 0.36732917999999998 0.34416788999999998 0.36714405 0.32502544 0.36522191999999998 0.34122722999999999 0.36825258 0.32280350000000002 0.36266630999999999 0.32588196000000003 0.36432063999999997 0.32113861999999999 0.35970962000000001 0.32382357000000001 0.3619464 0.32006758000000002 0.35649246000000001 0.32227467999999998 0.35920256 0.31962322999999998 0.35312921000000003 0.32127761999999999 0.35621786 0.31986690000000001 0.34975277999999999 0.32087088000000002 0.35309278999999999 0.32072954999999997 0.34647160999999999 0.32109117999999998 0.34995741000000002 0.32224506000000003 0.34343617999999998 0.32189810000000002 0.34691172999999997 0.32428860999999998 0.34073727999999998 0.32330024000000002 0.34408998000000002 0.32684010000000002 0.33850074000000002 0.32520234999999997"
+		+ " 0.34158778000000001 0.32976877999999998 0.33679156999999998 0.32756977999999998 0.33950835000000001 0.33296901000000001 0.335666 0.33028591000000002 0.33791953000000002 0.33632343999999997 0.33521104000000002 0.33326088999999998 0.33687955000000003 0.33971190000000001 0.33538127000000001 0.33637470000000003 0.33645122999999999 0.34299380000000002 0.33624094999999998 0.33952123000000001 0.33661538000000002 0.34605497000000002 0.33768666000000003 0.34257078000000002 0.33740800999999998 0.34876794 0.33972448 0.34541034999999998 0.33875560999999998 0.35104208999999997 0.34223956 0.34793162 0.34064537 0.35280102000000002 0.34514045999999998 0.35004443000000002 0.34297751999999998 0.35393530000000001 0.34832990000000003 0.35167319000000002 0.34567529000000002 0.35446459000000002 0.35168111000000002 0.35273206000000001 0.34863477999999998 0.35429727999999999 0.35506952000000003 0.35321772000000001 0.35174792999999999 0.35276908000000001 0.35485250000000002 0.35247003999999998 0.35480993999999999 0.35204672999999997"
+		+ " 0.35785120999999998 0.35176146000000003 0.35775161 0.35074042999999999 0.36065357999999997 0.35048014 0.36050044999999997 0.34892606999999998 0.36315310000000001 0.34869987000000002 0.36295288999999997 0.34666348000000002 0.36526048 0.34648061000000002 0.36502003999999999 0.34403461000000002 0.36687237 0.34390103999999999 0.36660081 0.32850944999999998 0.36600917999999999 0.32867341999999999 0.36575669 0.32609104999999999 0.36410176999999999 0.32630026000000001 0.36388320000000002 0.32407105000000003 0.36177187999999999 0.32431799 0.36159760000000002 0.32255076999999999 0.3590796 0.32282674 0.35895681000000002 0.32157242000000003 0.35615003000000001 0.32186687000000003 0.35608237999999998 0.32117349000000001 0.35308391 0.32147545 0.35307496999999999 0.32138931999999998 0.35000688000000002 0.32168740000000001 0.35005635000000002 0.32218152 0.34701836000000003 0.32246435000000001 0.34712475999999998 0.32355696 0.34424937"
+		)
+		2 "|Pot:pCylinder1|Pot:pCylinderShape1" "uvst[0].uvsp[250:499]" (" 0.32381367999999999 0.34440857000000002 0.32542401999999998 0.34179407000000001 0.32564514999999999 0.34200001000000002 0.32774662999999998 0.33975345000000001 0.32792354000000001 0.33999825 0.33041292 0.33819412999999998 0.33053958 0.33846837000000002 0.33333182 0.33717387999999998 0.33340250999999999 0.33746748999999998 0.33638752 0.33675318999999998 0.33640038999999999 0.33705502999999998 0.33947504000000001 0.33691465999999998 0.33942896 0.33721321999999998 0.34246755000000001 0.33769208000000001 0.34236436999999997 0.33797603999999998 0.34525388000000001 0.33901482999999999 0.34509778000000002 0.33927362999999999 0.34772813000000002 0.34086888999999998 0.34752482000000001 0.34109229000000002 0.34980178000000001 0.34315806999999998 0.34955943 0.34333837 0.35139972000000003 0.34580517 0.35112691000000001 0.34593480999999998 0.35243911 0.3487094 0.35214633000000001 0.34878390999999997 0.35291535000000002 0.35176420000000003 0.35261363000000001 0.35178047000000001 0.34362577999999999 0.31830722 0.3426951799"
+		+ "9999999 0.31976633999999998 0.34147035999999997 0.32099538999999999 0.34001225000000002 0.3219322 0.33838194999999999 0.32252258 0.33605635 0.32275777999999999 0.33434886000000003 0.32240969000000003 0.33275419000000001 0.32172888999999999 0.33135187999999999 0.32071053999999999 0.33019733000000001 0.31941521 0.32935143 0.31790519 0.32887197000000001 0.31624459999999999 0.32875162000000002 0.3145172 0.32903373000000002 0.31280857000000001 0.32966762999999999 0.31120007999999999 0.33065408000000002 0.30977737999999999 0.33192629000000001 0.30859733 0.33342074999999999 0.30772232999999999 0.33507316999999998 0.30721127999999998 0.33679920000000002 0.30705798000000001 0.33851390999999997 0.30730742 0.34013510000000002 0.30791032000000002 0.34157699000000002 0.30886923999999999 0.34278160000000002 0.31011820000000001 0.34368526999999999 0.31159502 0.34422791000000003 0.31323653000000001 0.34441417000000002 0.31495821000000002 0.34419757000000001 0.31667613999999999 0.33657837000000002 0.31489569000000001 0.296231"
+		+ "50999999998 0.30712002999999999 0.28640449000000001 0.31962579000000002 0.29874408000000002 0.30873579000000001 0.28812808000000001 0.32058513 0.30114954999999999 0.31052697000000001 0.28981137000000001 0.32167648999999998 0.30342078 0.31242692 0.291394 0.32284498 0.30558223000000001 0.31450158 0.29291999000000002 0.32412994000000001 0.23458998 0.31861298999999998 0.29436438999999998 0.32550836 0.23648725000000001 0.31629950000000001 0.29570060999999997 0.32696902999999999 0.23853854999999999 0.31413745999999998 0.24827353999999999 0.32672512999999997 0.24072354000000001 0.31211232999999999 0.24963413000000001 0.32527453000000001 0.24300558999999999 0.31021064999999998 0.25108278000000001 0.32392149999999997 0.24543564000000001 0.30846560000000001 0.25262069999999998 0.322653 0.24794237 0.30687969999999998 0.2542333 0.32147849000000001 0.25055820000000001 0.30542743 0.25592071 0.32042271 0.25326669000000002 0.30417632999999999 0.25765621999999999 0.31946986999999999 0.25603563000000001 0.30309736999999998 0.2"
+		+ "5946849999999999 0.31864207999999999 0.2588743 0.30217319999999998 0.26130027 0.31789190000000001 0.26178013999999999 0.30146146000000001 0.26320493 0.31729352 0.26470828000000002 0.30091171999999999 0.26513571000000002 0.31681221999999998 0.26766306000000001 0.30054681999999999 0.26710671000000002 0.31644868999999998 0.27063978 0.30037701 0.26907647000000001 0.31620514 0.27363126999999998 0.30040204999999998 0.27105754999999998 0.31609499000000002 0.27659601 0.30060005000000001 0.27305703999999997 0.31610399 0.27956533 0.30098652999999997 0.27503365000000002 0.31623727000000001 0.28247296999999999 0.30156755000000002 0.27701031999999998 0.31649178 0.28535919999999998 0.30231248999999999 0.27893907000000001 0.31686895999999998 0.28819530999999998 0.30326354999999999 0.28088105000000002 0.31738191999999998 0.29094386 0.30436224000000001 0.28276306000000001 0.31800847999999998 0.29365265000000002 0.30567424999999998 0.28462261 0.31875682 0.34489965 0.31684095000000001 0.34427541 0.31862199000000002 0.3432589200"
+		+ "0000002 0.32021606000000002 0.34192514000000002 0.32155454 0.34033656000000001 0.32257539000000002 0.33856612000000003 0.32321667999999998 0.33597528999999998 0.32348913000000001 0.33412606 0.32309246000000003 0.33239359000000002 0.32235289 0.33086621999999999 0.32124292999999998 0.32960886 0.31983214999999998 0.32868522 0.31818228999999998 0.32816183999999998 0.31636965 0.32803040999999999 0.31448299000000002 0.32833849999999998 0.31261646999999998 0.32903081000000001 0.31085968000000003 0.33010894000000002 0.30930454000000002 0.33149635999999999 0.30801779000000001 0.33313006000000001 0.30706179 0.33493412 0.30650358999999999 0.33681940999999999 0.30633621999999999 0.33869261000000001 0.30660862 0.34046315999999999 0.30726713 0.34203923000000003 0.30831503999999998 0.34335273999999999 0.30967724000000002 0.34434003000000002 0.31129169000000001 0.34493273000000002 0.31308383000000001 0.34513611 0.31496435 0.24258102000000001 0.26236522000000001 0.24307068000000001 0.26199555000000002 0.23920931000000001 0.25"
+		+ "107032000000001 0.23793311 0.25090407999999997 0.24209531000000001 0.24091605999999999 0.24249715999999999 0.24137966 0.25364554 0.23661245 0.25374936999999997 0.2353297 0.26544029000000002 0.23937289 0.26499379000000001 0.2397937 0.26713932000000001 0.25384158000000001 0.26828980000000002 0.25441842999999997 0.26500040000000002 0.26279353999999999 0.26464385000000001 0.26229423000000002 0.25346380000000002 0.26554 0.25322717 0.26680499000000002 0.28356927999999998 0.34240442999999998 0.25898283999999999 0.26624905999999998 0.25884748000000002 0.26598132000000002 0.24245090999999999 0.26229918000000002 0.24233367 0.26256131999999999 0.25712717000000002 0.26695650999999998 0.25705182999999998 0.26666616999999998 0.24386126999999999 0.26382654999999999 0.24365132 0.26403987000000001 0.24533661000000001 0.26509052999999999 0.24515856999999999 0.26533157000000002 0.24698824999999999 0.26613027 0.23764752 0.25087433999999997 0.24707383999999999 0.2662484 0.23790143 0.252832 0.23760317 0.25286048999999999 0.2382835"
+		+ "0000000001 0.25471519999999997 0.23799776 0.25480646000000001 0.23906670999999999 0.25647014000000001 0.23880688999999999 0.25662011000000001 0.24215238 0.24078179999999999 0.24188291000000001 0.24068249999999999 0.24072365000000001 0.24229197 0.24049665000000001 0.24209691999999999 0.23956208000000001 0.24384917 0.23930958999999999 0.24368785000000001 0.23863612000000001 0.24556722 0.25376523000000001 0.235043 0.238524 0.24566062 0.25182222999999998 0.23539199 0.25177926 0.23509546000000001 0.24995990000000001 0.23586536999999999 0.24985484999999999 0.23558439 0.24824521999999999 0.23673315 0.24808274 0.23648094 0.26557678000000001 0.23942436 0.26566482000000002 0.23915099000000001 0.26400846 0.23805971000000001 0.26419388999999999 0.23782481 0.26240419999999998 0.236964 0.26255487999999999 0.23670495999999999 0.26064909000000003 0.23611034 0.26854968000000001 0.2545405 0.26055115000000001 0.23600225 0.26895397999999998 0.25260830000000001 0.26924503 0.25267952999999999 0.26921272000000002 0.2507042299999999"
+		+ "7 0.26951259 0.25071204000000002 0.26905047999999998 0.24878933 0.26934515999999997 0.24873318 0.26493095999999999 0.26292187 0.26518995000000001 0.26304602999999999 0.26649517 0.26155244999999999 0.29335844999999999 0.35639655999999997 0.26670283 0.26176798000000001 0.28663671000000002 0.33988982000000001 0.29587287000000001 0.35450703 0.28804617999999999 0.33849472000000003 0.29825323999999998 0.35245121000000001 0.30048852999999998 0.35023855999999998 0.26779776999999999 0.26011115000000001 0.29059190000000001 0.33545297000000002 0.30256850000000002 0.34787922999999998 0.24420665 0.33698647999999998 0.30448353 0.34538424000000001 0.24551687999999999 0.33847821 0.30622475999999998 0.34276497 0.23307694000000001 0.35017662999999999 0.26803403999999997 0.26029551000000001 0.24844621 0.34115243000000001 0.23530819 0.35239338999999997 0.25002943999999999 0.34234672999999999 0.23768476999999999 0.35445362000000002 0.24019573999999999 0.35634768 0.26888096 0.25848764000000002 0.25340544999999998 0.344428840000000"
+		+ "01 0.24282943000000001 0.35806704 0.25519966999999999 0.34527898000000001 0.24557377 0.35960357999999998 0.25704740999999998 0.34600532000000001 0.24841611 0.36095034999999998 0.25134330999999999 0.36210096000000003 0.25318163999999999 0.26708847000000002 0.26087606000000002 0.34704184999999999 0.25434183999999999 0.36305028 0.26283037999999997 0.34737885000000002 0.25739794999999999 0.36379391 0.26049745000000002 0.36432831999999998 0.26900130999999999 0.25840521 0.26678509 0.34768438000000002 0.26362604000000001 0.36465113999999998 0.26876938 0.34761876000000003 0.26676935000000002 0.36476088000000001 0.27074468000000002 0.34741861000000002"
+		)
+		2 "|Pot:pCylinder1|Pot:pCylinderShape1" "uvst[0].uvsp[500:729]" (" 0.26991290000000001 0.36465692999999999 0.27304208000000002 0.36433989 0.25515038000000001 0.2669434 0.27462303999999998 0.34658736000000001 0.27614260000000002 0.36381113999999998 0.27651482999999999 0.34599226999999999 0.27920001999999999 0.36307310999999998 0.28220028000000003 0.36212933000000003 0.25516230000000001 0.26724279000000001 0.28017056000000001 0.34445344999999999 0.28512955000000001 0.36098403000000001 0.28190470000000001 0.34348666999999999 0.28797442000000001 0.35964251000000003 0.29072154 0.35811095999999998 0.24248241000000001 0.26169795000000001 0.24352641 0.26096046000000001 0.23917608000000001 0.25271368 0.23950292000000001 0.25432473 0.24017350000000001 0.25582551999999997 0.24275436 0.24077267999999999 0.24356066000000001 0.24176455999999999 0.25200254 0.23665936000000001 0.25040936000000003 0.23706432 0.24894301999999999 0.23780723000000001 0.26561093000000002 0.24002541999999999 0.26465349999999999 0.24087227999999999 0.26771134000000002 0.25230068 0.26793271000000002 0.2506718 0.26"
+		+ "779323999999999 0.24903394000000001 0.26433074000000001 0.26287442 0.26362115000000003 0.26181120000000002 0.25510286999999998 0.26566415999999998 0.25672948000000001 0.26542698999999997 0.25826507999999998 0.26484054000000001 0.24428949999999999 0.26339096000000001 0.24569751000000001 0.26459866999999998 0.24727864999999999 0.26558983000000003 0.24118711000000001 0.24268983 0.24007712 0.24417610000000001 0.23919493999999999 0.24582054 0.26363020999999998 0.23853932 0.26209903000000001 0.23749222 0.26041931000000001 0.23667924000000001 0.26607108000000002 0.26111287 0.26731568999999999 0.25973737000000002 0.26891296999999997 0.25794845999999999 0.26834834000000002 0.25818306000000002 0.28514618000000003 0.34119892000000002 0.28937035999999999 0.33701754 0.29169106 0.33379959999999997 0.24693651 0.33986545000000001 0.34822869000000001 0.26396619999999998 0.34537303000000003 0.26241297000000002 0.35066723999999999 0.26611595999999998 0.35256623999999998 0.26875441999999999 0.35383046000000001 0.2717493200000000"
+		+ "2 0.35439663999999999 0.27495044000000002 0.35423624999999997 0.27819728999999999 0.35335742999999997 0.28132700999999999 0.35180420000000001 0.28418272999999999 0.34965444000000001 0.28662126999999998 0.34701598 0.28852028000000002 0.34402107999999998 0.28978449000000001 0.34081994999999998 0.29035068000000003 0.33757311000000001 0.29019028000000002 0.33444339000000001 0.28931147000000002 0.33158760999999998 0.28775823 0.32914913000000001 0.28560847 0.32725011999999998 0.28297000999999999 0.32598585000000002 0.27997512000000002 0.32541972000000002 0.27677399000000003 0.32558006 0.27352715 0.32645892999999998 0.27039742 0.32801216999999999 0.26754170999999999 0.33016192999999999 0.26510316 0.33280039 0.26320421999999999 0.33579527999999997 0.26193993999999998 0.33899641000000003 0.26137381999999998 0.34224325 0.26153415000000002 0.25168162999999999 0.34344488000000001 0.23100129999999999 0.34781355000000003 0.25419628999999999 0.28436415999999998 0.35485571999999999 0.35166018999999998 0.35431528000000001 0.3"
+		+ "4823352000000002 0.35315501999999999 0.34497254999999999 0.35135709999999998 0.34200633000000003 0.34903157000000001 0.33943433000000001 0.34625739 0.33735132000000001 0.34312761000000003 0.33587241000000001 0.33977181000000001 0.33499420000000002 0.33630723000000001 0.33481931999999998 0.33287739999999999 0.33528500999999999 0.32960504000000002 0.3364355 0.32661038999999997 0.33818310000000001 0.32400196999999997 0.34047031 0.32191168999999997 0.34322965 0.32036299000000001 0.34633350000000002 0.31948024000000003 0.34968822999999999 0.31923157000000002 0.35314058999999998 0.31968533999999998 0.35657941999999998 0.32078057999999998 0.35986923999999998 0.32248336 0.36289202999999998 0.32475531000000002 0.36550634999999998 0.34161901 0.36984211 0.34488392000000001 0.36861449000000002 0.34783876000000002 0.36680763999999999 0.35037267 0.36443871 0.35241215999999997 0.36163448999999998 0.353881 0.35849154 0.32884734999999998 0.36551082000000001 0.34098202 0.36738342000000002 0.30760567999999999 0.3166912800000000"
+		+ "2 0.33585995000000002 0.324202 0.33665775999999997 0.32277507 0.336698 0.32350981000000001 0.34152377 0.36946206999999998 0.32835059999999999 0.36626576999999999 0.35231245 0.35179663 0.35185414999999998 0.34885811999999999 0.35085452 0.34606415000000001 0.34931737000000002 0.3435182 0.34732193 0.34131527 0.34494196999999999 0.33953183999999997 0.34226142999999998 0.33825934000000002 0.33938295000000002 0.33751135999999998 0.33641296999999998 0.33735627000000001 0.33347326999999999 0.33776075 0.33066582999999999 0.33874219999999999 0.32809997000000002 0.34024262 0.32586586000000001 0.34220551999999999 0.32406985999999999 0.34456754000000001 0.32274657000000001 0.34723109000000002 0.32198476999999998 0.35010587999999998 0.32177686999999999 0.35306597000000001 0.32216077999999998 0.35601503000000001 0.32310223999999999 0.35883427000000001 0.32456464000000002 0.36142384999999999 0.32650918000000001 0.36366522000000001 0.34115338000000001 0.36795998000000002 0.34107333000000001 0.36766981999999998 0.3437678800000"
+		+ "0003 0.36633032999999998 0.34629803999999997 0.36477983000000003 0.34847409000000001 0.36275297000000001 0.35022019999999998 0.36034762999999997 0.35147673000000001 0.35765206999999999 0.35217154000000001 0.35476738000000002 0.34157282 0.36966091000000001 0.25971955000000002 0.25411946000000002 0.26059198 0.25048809999999999 0.26447648000000001 0.26288234999999999 0.32749641000000002 0.36766249000000001 0.34564130999999998 0.31293029 0.34585047000000002 0.31497043000000002 0.34498793 0.31099116999999998 0.34392362999999998 0.30923939 0.34250378999999997 0.30775785 0.34078758999999997 0.30663073000000002 0.33887208000000002 0.30590605999999998 0.33683925999999997 0.30562215999999998 0.33479421999999998 0.30579214999999998 0.33284198999999998 0.30640829000000003 0.33106953 0.30743861 0.32956069999999998 0.30882943000000002 0.32840072999999997 0.31052309 0.32763957999999999 0.31242353 0.32731687999999998 0.31444930999999998 0.32744783 0.31649559999999999 0.32802606000000001 0.31845719 0.32902068000000001 0.32024"
+		+ "646000000001 0.33037781999999999 0.32177876999999999 0.33203666999999998 0.32297194000000001 0.33389866000000001 0.32377756000000002 0.33677351 0.32422804999999999 0.24700041 0.32826035999999997 0.33875488999999998 0.32391340000000002 0.34065801000000001 0.32321334000000002 0.34237695000000001 0.32211404999999999 0.34382587999999997 0.32066828000000003 0.34491824999999998 0.31893355000000001 0.34560554999999998 0.31700665 0.25894468999999998 0.34658878999999998 0.26480197999999999 0.34759873000000002 0.27269852 0.34706879000000002 0.27836829000000002 0.34528518000000002 0.25997144 0.23619551999999999 0.25955813999999999 0.23859743999999999 0.24675356000000001 0.23795052 0.24767396999999999 0.23885290000000001 0.25756006999999997 0.24577840000000001 0.26011055999999999 0.23615153 0.26559913000000002 0.23988003999999999 0.25954354000000002 0.23740882999999999 0.26352733 0.24131037 0.24655335 0.2377447 0.26077324000000002 0.23582012999999999 0.23835127 0.24543113999999999 0.23869298 0.24624784 0.2402099500000000"
+		+ "1 0.25801932999999999 0.23999462999999999 0.25820928999999998 0.24107561999999999 0.2467608 0.23988746 0.2467259 0.24395142 0.24290802 0.24115612 0.25714397 0.24260859000000001 0.24077846 0.24816714000000001 0.24905609000000001 0.25298899000000002 0.2439393 0.23865484000000001 0.24610703 0.26045758000000002 0.26492559999999998 0.26063532 0.26515107999999998 0.24683325 0.26640528000000002 0.24767114000000001 0.26611942 0.24834365999999999 0.26377684000000001 0.24822868000000001 0.26495993000000001 0.24752809000000001 0.26614797000000001 0.24469365000000001 0.26064765000000001 0.25963597999999999 0.26393241000000001 0.24247836 0.26184380000000002 0.2511121 0.25685626 0.24649544000000001 0.25208311999999999 0.26915175000000002 0.25864988999999999 0.26888817999999998 0.25780469 0.26848053999999999 0.24695027999999999 0.26874638000000001 0.24684174 0.26656425 0.25707036 0.26774388999999998 0.25721663 0.26333946000000003 0.26063615000000001 0.26729905999999998 0.24746562999999999 0.23351140000000001 0.2962437900000"
+		+ "0001 0.32353758999999999 0.29715734999999999 0.23164377999999999 0.29297100999999998"
+		)
+		3 "|Pot:pCylinder1|Pot:pCylinderShape1.instObjGroups" ":initialShadingGroup.dagSetMembers" 
+		"-na"
+		5 3 "PotRN" "|Pot:pCylinder1|Pot:pCylinderShape1.instObjGroups" "PotRN.placeHolderList[1]" 
+		":initialShadingGroup.dsm";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 select -ne :time1;
@@ -3351,13 +2529,13 @@ select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
 select -ne :defaultRenderingList1;
-	setAttr -s 3 ".r";
+	setAttr -s 4 ".r";
 select -ne :defaultTextureList1;
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 9 ".dsm";
+	setAttr -s 8 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -3388,6 +2566,7 @@ connectAttr "ShelfRN.phl[5]" "lambert2SG.dsm" -na;
 connectAttr "ShelfRN.phl[6]" "lambert2SG.dsm" -na;
 connectAttr "ShelfRN.phl[7]" "lambert2SG.dsm" -na;
 connectAttr "ShelfRN.phl[8]" "lambert2SG.dsm" -na;
+connectAttr "PotRN.phl[1]" "lambert2SG.dsm" -na;
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
@@ -3454,7 +2633,6 @@ connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape2.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape2.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "pCylinderShape3.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape4.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape5.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape6.iog" ":initialShadingGroup.dsm" -na;
