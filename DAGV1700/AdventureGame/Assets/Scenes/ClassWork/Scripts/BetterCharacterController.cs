@@ -23,9 +23,13 @@ public class BetterCharacterController : MonoBehaviour
     private Transform thisTransform;
     private int jumpCount = 0;
     private int maxJumps = 2;
+    public bool IsGrounded()
+    {
+        return Physics.Raycast(transform.position, -Vector3.up, 0.1f);
+    }
     //add a roll to the character controller
-   
-    
+
+
 
     /// <summary>
     /// Initialize required components.
@@ -62,6 +66,13 @@ public class BetterCharacterController : MonoBehaviour
         {
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
             jumpCount++;
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("trampoline"))
+        {
+            velocity.y = 12f;
         }
     }
 

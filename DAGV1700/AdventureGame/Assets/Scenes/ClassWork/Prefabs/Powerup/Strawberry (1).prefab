@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 4852417780423490220}
   - component: {fileID: 7725129421892663917}
   - component: {fileID: 7095601584472033781}
+  - component: {fileID: 232834304950458999}
   - component: {fileID: 9209882755093891207}
+  - component: {fileID: 1200901856361485167}
   m_Layer: 13
   m_Name: Strawberry (1)
   m_TagString: Untagged
@@ -110,6 +112,28 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.12823716, y: 0.12224448, z: 0.2}
   m_Center: {x: 0, y: -0.008988894, z: 0}
+--- !u!95 &232834304950458999
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2232760006460287574}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2d1b93d600290c64c8ac55ddc3d3ba96, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &9209882755093891207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,13 +149,67 @@ MonoBehaviour:
   startEvent:
     m_PersistentCalls:
       m_Calls: []
-  nameIdObj: {fileID: 0}
-  holdTime: 0.1
+  nameIdObj: {fileID: 11400000, guid: f7b05ed2186414f76b7648e4d51b4ad5, type: 2}
+  holdTime: 0.5
   triggerEnterMatches:
   - nameIdObj: {fileID: 11400000, guid: f7b05ed2186414f76b7648e4d51b4ad5, type: 2}
     canRepeat: 0
     repeatTime: 0
     workEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 11400000, guid: 60b9beb3b5639ab41b98bb791a7d727f, type: 2}
+          m_TargetAssemblyTypeName: IntData, Assembly-CSharp
+          m_MethodName: UpdateValue
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: TextMeshProBehaviour, Assembly-CSharp
+          m_MethodName: UpdateText
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 60b9beb3b5639ab41b98bb791a7d727f, type: 2}
+            m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 9100000, guid: 2d1b93d600290c64c8ac55ddc3d3ba96, type: 2}
+          m_TargetAssemblyTypeName: TextMeshProBehaviour, Assembly-CSharp
+          m_MethodName: 
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 60b9beb3b5639ab41b98bb791a7d727f, type: 2}
+            m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+            m_IntArgument: 10
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    repeatEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    delayedEvent:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2232760006460287574}
@@ -146,22 +224,16 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-    repeatEvent:
-      m_PersistentCalls:
-        m_Calls: []
-    delayedEvent:
-      m_PersistentCalls:
-        m_Calls: []
   triggerExitMatches: []
+--- !u!114 &1200901856361485167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2232760006460287574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b78e28e38fd7247bc1a911b4643ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

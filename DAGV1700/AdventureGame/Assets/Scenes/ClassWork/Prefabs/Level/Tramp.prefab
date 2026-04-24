@@ -11,9 +11,12 @@ GameObject:
   - component: {fileID: 3671421769683495678}
   - component: {fileID: 7903177058657556339}
   - component: {fileID: 6090155553101204801}
+  - component: {fileID: 4117566913840290605}
+  - component: {fileID: 2464599489199782852}
+  - component: {fileID: 6884401279272612917}
   m_Layer: 6
   m_Name: Tramp
-  m_TagString: Untagged
+  m_TagString: trampoline
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,9 +106,59 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.23915485, y: 0.0762518, z: 0.2}
-  m_Center: {x: -0.005177653, y: -0.04794073, z: 0}
+  m_Size: {x: 0.2164882, y: 0.054491807, z: 0.2}
+  m_Center: {x: -0.005631006, y: -0.058820724, z: 0}
+--- !u!95 &4117566913840290605
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4459214352428910074}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ae576f9a2f7e6bc499ef934d1a1716dd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2464599489199782852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4459214352428910074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f686339384b344575acee270e4dc6bbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nameIdObj: {fileID: 11400000, guid: 2284f289e1d644f45850293722e501ad, type: 2}
+--- !u!114 &6884401279272612917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4459214352428910074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f86229d54cad818439be899b0e83ee2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
