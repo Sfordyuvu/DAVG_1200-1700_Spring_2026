@@ -70,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9209882755093891207, guid: 373a28fe64ae4dd48a81394f0cac7b68, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9209882755093891207, guid: 373a28fe64ae4dd48a81394f0cac7b68, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -83,7 +83,7 @@ PrefabInstance:
     - target: {fileID: 9209882755093891207, guid: 373a28fe64ae4dd48a81394f0cac7b68, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 9100000, guid: 2ca2d194aa061304eb24e9b755817cd0, type: 2}
+      objectReference: {fileID: 19465935831831035}
     - target: {fileID: 9209882755093891207, guid: 373a28fe64ae4dd48a81394f0cac7b68, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
@@ -93,12 +93,16 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9209882755093891207, guid: 373a28fe64ae4dd48a81394f0cac7b68, type: 3}
+      propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 9209882755093891207, guid: 373a28fe64ae4dd48a81394f0cac7b68, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: TextMeshProBehaviour, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9209882755093891207, guid: 373a28fe64ae4dd48a81394f0cac7b68, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: TextMeshProBehaviour, Assembly-CSharp
+      value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9209882755093891207, guid: 373a28fe64ae4dd48a81394f0cac7b68, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
@@ -119,17 +123,22 @@ PrefabInstance:
     - target: {fileID: 9209882755093891207, guid: 373a28fe64ae4dd48a81394f0cac7b68, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 11400000, guid: 60b9beb3b5639ab41b98bb791a7d727f, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 9209882755093891207, guid: 373a28fe64ae4dd48a81394f0cac7b68, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: IntData, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9209882755093891207, guid: 373a28fe64ae4dd48a81394f0cac7b68, type: 3}
       propertyPath: triggerEnterMatches.Array.data[0].workEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: IntData, Assembly-CSharp
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 373a28fe64ae4dd48a81394f0cac7b68, type: 3}
+--- !u!82 &19465935831831035 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -6598502555987209789, guid: 373a28fe64ae4dd48a81394f0cac7b68, type: 3}
+  m_PrefabInstance: {fileID: 2605403615973212216}
+  m_PrefabAsset: {fileID: 0}
